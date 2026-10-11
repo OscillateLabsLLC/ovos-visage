@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .rays { transform-box: fill-box; transform-origin: center; animation: spin 20s linear infinite; }
+    .cloud { animation: drift 7s ease-in-out infinite alternate; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes drift { from { transform: translateX(-2px); } to { transform: translateX(3px); } }
+    @media (prefers-reduced-motion: reduce) { .rays, .cloud { animation: none; } }
+  </style>
+  <defs><path id="ray" d="M22 3v6"/></defs>
+  <g class="rays" stroke="#ffc93c" stroke-width="3" stroke-linecap="round">
+    <use href="#ray"/>
+    <use href="#ray" transform="rotate(45 22 22)"/>
+    <use href="#ray" transform="rotate(90 22 22)"/>
+    <use href="#ray" transform="rotate(135 22 22)"/>
+    <use href="#ray" transform="rotate(180 22 22)"/>
+    <use href="#ray" transform="rotate(225 22 22)"/>
+    <use href="#ray" transform="rotate(270 22 22)"/>
+    <use href="#ray" transform="rotate(315 22 22)"/>
+  </g>
+  <circle cx="22" cy="22" r="9" fill="#ffc93c"/>
+  <path class="cloud" d="M18 52h30a11 11 0 0 0 0-22 15 15 0 0 0-28.5-3A11.5 11.5 0 0 0 18 52z" fill="#d9e2ec"/>
+</svg>

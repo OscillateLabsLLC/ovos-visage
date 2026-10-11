@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OVOS Visage</title>
+  <link rel="stylesheet" href="/static/visage.css">
+  <link rel="stylesheet" href="/static/face/face.css">
+  <link rel="stylesheet" href="/static/skills.css">
+  <link rel="stylesheet" href="/static/alerts.css">
+  <link rel="stylesheet" href="/static/ocp.css">
+  <link rel="stylesheet" href="/static/templates.css">
+</head>
+<body>
+  <div id="device" class="device" aria-label="OVOS Visage display">
+    <svg class="silhouette" viewBox="0 0 560 960" aria-hidden="true">
+      <rect x="4" y="4" width="552" height="952" rx="96" class="shell"/>
+      <rect x="22" y="22" width="516" height="916" rx="80" class="bezel"/>
+      <circle cx="280" cy="52" r="5" class="camera"/>
+    </svg>
+    <main id="screen" class="screen">
+      <section id="page" class="page"></section>
+      <section id="attention" class="attention" data-state="rest" aria-hidden="true"></section>
+      <div id="link" class="link offline" title="GUI connection">GUI offline</div>
+    </main>
+  </div>
+  <script type="module" src="/static/visage.js"></script>
+</body>
+</html>

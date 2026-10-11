@@ -1,0 +1,57 @@
+/* SYSTEM_* templates (SPEC 8.2) in the SPEC 9 vocabulary: rings and plain stacked text on black, no cards. */
+.template-title { font-size: 15px; color: var(--muted); text-align: center; letter-spacing: 1px; text-transform: uppercase; }
+.template-title:empty, .template-hint:empty, .template-label:empty { display: none; }
+.template-hint { font-size: 14px; color: var(--muted); text-align: center; }
+.template-label { font-size: 22px; text-align: center; max-width: 90%; }
+
+/* TextFrame: title and text centred as a group; text_frame.js paginates against the frame height. */
+.text-frame { width: 100%; flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; }
+.text-frame .text-body { flex: none; width: 100%; text-align: center; font-size: 32px; line-height: 1.32; overflow-wrap: anywhere; }
+.text-chip { width: 300px; height: 300px; }
+.text-chip .text-body.short { width: auto; font-weight: 300; line-height: 1.1; white-space: pre; }
+.page-dots { display: flex; gap: 8px; justify-content: center; min-height: 8px; }
+.page-dots span { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-dim); transition: background 0.4s ease, transform 0.4s ease; }
+.page-dots span.active { background: var(--accent); transform: scale(1.35); }
+
+/* Loading and Status: OVOS's Lottie animations in the same circular footprint as the other chips */
+.lottie-chip { width: 220px; height: 220px; }
+.lottie-chip > svg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+
+/* Loading fallback: the thinking dots */
+.loading-dots { display: flex; gap: 16px; }
+.loading-dots span { width: 18px; height: 18px; border-radius: 50%; background: var(--fg); animation: loading-dot 1.2s ease-in-out infinite; }
+.loading-dots span:nth-child(2) { animation-delay: 0.2s; }
+.loading-dots span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes loading-dot { 0%, 80%, 100% { opacity: 0.25; transform: scale(0.8); } 40% { opacity: 1; transform: scale(1.15); } }
+
+/* Status: accent ring + check, or dimmed ring + cross */
+.status-ring { width: 220px; height: 220px; }
+.status-glyph { position: absolute; inset: 0; width: 100%; height: 100%; }
+.status-glyph path { fill: none; stroke: var(--fg); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+.status-ring.off { opacity: 0.45; }
+
+/* ImageFrame / AnimatedImageFrame */
+.image-frame { margin: 0; width: 100%; flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.image-box { position: relative; width: 100%; flex: 1 1 auto; min-height: 0; border-radius: 24px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.image-box img { width: 100%; height: 100%; display: block; }
+.image-box .template-hint, .image-box.broken img { display: none; }
+.image-box.broken .template-hint { display: block; }
+
+/* HtmlFrame / UrlFrame: the frame fills the page above the strip; no chrome */
+.template-iframe { width: 100%; flex: 1 1 auto; min-height: 0; border: 0; background: transparent; }
+.url-frame { width: 100%; flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+.url-frame .url-text, .url-frame .template-hint, .url-frame .url-chip { display: none; }
+.url-frame.refused .url-chip { display: flex; width: 180px; height: 180px; margin-bottom: 14px; }
+/* About 40 % of the chip: 72 px of visible globe (0.69 of the SVG box). */
+.url-globe { width: 104px; height: 104px; }
+.url-frame.refused .url-text { display: block; font-size: 24px; text-align: center; overflow-wrap: anywhere; }
+.url-frame.refused .template-hint { display: block; }
+
+/* InputBox: display-only prompt */
+.input-box { display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center; }
+.input-chip { width: 200px; height: 200px; }
+/* About 40 % of the chip: 80 px of visible microphone (0.73 of the SVG box). */
+.input-mic { width: 110px; height: 110px; }
+.input-title { font-size: 30px; }
+.input-title:empty, .input-placeholder:empty { display: none; }
+.input-placeholder { font-size: 22px; color: var(--muted); font-style: italic; }

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .flake { animation: flutter 3s ease-in-out infinite; }
+    .flake:nth-of-type(2) { animation-delay: -1s; }
+    .flake:nth-of-type(3) { animation-delay: -2s; }
+    @keyframes flutter { from { transform: translate(0, -5px); opacity: 0; } 25% { opacity: 1; } 50% { transform: translate(2px, 1px); } to { transform: translate(-1px, 7px); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .flake { animation: none; } }
+  </style>
+  <g fill="#ffffff">
+    <circle class="flake" cx="21" cy="53" r="3"/>
+    <circle class="flake" cx="32" cy="55" r="3"/>
+    <circle class="flake" cx="43" cy="53" r="3"/>
+  </g>
+  <path d="M18 44h30a10 10 0 0 0 0-20 14 14 0 0 0-26.5-3A10.5 10.5 0 0 0 18 44z" fill="#d9e2ec"/>
+</svg>

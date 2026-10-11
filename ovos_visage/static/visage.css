@@ -1,0 +1,106 @@
+:root {
+  --bg: #0b0f14;
+  --page-bg: #05070a;
+  --fg: #ffffff;
+  --muted: #8a96a8;
+  --accent: #1e9bff;
+  --accent-dim: #0f4c80;
+  --accent-soft: rgba(30, 155, 255, 0.18);
+  --sun: #ffc93c;
+  --ok: #3ddc84;
+  --bad: #ff5c5c;
+  --card: #141b24;
+  --shell: #1d232b;
+  --bezel: #000000;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --screen-w: 480px;
+  --screen-h: 800px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font-family: var(--font); overflow: hidden; }
+
+.device { position: absolute; left: 50%; top: 50%; width: 560px; height: 960px; transform-origin: center center; }
+.silhouette { position: absolute; inset: 0; width: 100%; height: 100%; }
+.silhouette .shell { fill: var(--shell); stroke: #2c343e; stroke-width: 2; }
+.silhouette .bezel { fill: var(--bezel); }
+.silhouette .camera { fill: #1a2029; }
+
+.screen {
+  position: absolute; left: 40px; top: 80px; width: var(--screen-w); height: var(--screen-h);
+  background: var(--page-bg); border-radius: 28px; overflow: hidden;
+}
+.page { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; padding: 32px 24px; }
+
+.link { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); font-size: 12px; padding: 3px 10px; border-radius: 10px; background: #3a1d1d; color: #ffb4b4; }
+.link.online { display: none; }
+
+.circle {
+  position: relative; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; flex: none;
+}
+.circle > svg.ring { position: absolute; inset: 0; width: 100%; height: 100%; transform: rotate(-90deg); }
+.ring .track { fill: none; stroke: var(--accent-dim); stroke-width: 6; }
+.ring .value { fill: none; stroke: var(--accent); stroke-width: 6; stroke-linecap: round; transition: stroke-dashoffset 0.9s linear; }
+
+.clock { width: 300px; height: 300px; background: radial-gradient(circle, #0d1a28 0%, #070b10 70%); }
+.clock .time { font-size: 92px; font-weight: 300; letter-spacing: -2px; line-height: 1; font-variant-numeric: tabular-nums; }
+.clock .date { margin-top: 10px; font-size: 20px; color: var(--muted); }
+
+.weather { width: 170px; height: 170px; background: var(--card); }
+.weather img { width: 72px; height: 72px; }
+.weather .temp { font-size: 34px; font-weight: 400; margin-top: 4px; }
+
+.chips { display: flex; gap: 18px; justify-content: center; }
+.chip { width: 120px; height: 120px; background: var(--card); padding: 12px; }
+.chip .big { font-size: 34px; font-weight: 400; line-height: 1; }
+.chip .small { font-size: 13px; color: var(--muted); margin-top: 6px; max-width: 92px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.badge { position: absolute; top: 22px; right: 22px; min-width: 28px; height: 28px; border-radius: 14px; background: var(--accent); font-size: 15px; font-weight: 600; display: flex; align-items: center; justify-content: center; padding: 0 8px; }
+.hidden { display: none !important; }
+
+.logo { width: 120px; height: 120px; }
+.logo span { width: 36px; height: 36px; border-radius: 50%; background: var(--accent); }
+
+.fallback { width: 100%; max-height: 100%; overflow: auto; background: var(--card); border-radius: 20px; padding: 20px; font-size: 14px; }
+.fallback h2 { margin: 0 0 4px; font-size: 22px; font-weight: 500; }
+.fallback .ns { color: var(--muted); font-size: 13px; margin-bottom: 14px; word-break: break-all; }
+.fallback dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 12px; margin: 0; }
+.fallback dt { color: var(--accent); }
+.fallback dd { margin: 0; white-space: pre-wrap; word-break: break-word; font-family: ui-monospace, Menlo, monospace; font-size: 12px; }
+
+/* Polish vocabulary (SPEC 9): reuse these instead of inventing per-page effects. */
+/* Hero glow: the clock ring's breathing halo, for any hero ring. Tint with --glow on the circle. */
+.hero-glow {
+  position: absolute; inset: -6px; border-radius: 50%; pointer-events: none;
+  box-shadow: 0 0 34px 2px var(--glow, var(--accent-soft)); animation: breathe 6s ease-in-out infinite;
+  transition: box-shadow 0.8s ease;
+}
+@keyframes breathe { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
+
+/* State bloom: the glow swells once when a state arrives (add .bloom to the circle); .bloom-loop keeps swelling. */
+.bloom > .hero-glow { animation: bloom 1.1s ease-out 1, breathe 6s ease-in-out 1.1s infinite; }
+.bloom-loop > .hero-glow { animation: bloom 1.1s ease-in-out infinite alternate; }
+@keyframes bloom {
+  0% { box-shadow: 0 0 0 0 var(--glow, var(--accent-soft)); opacity: 1; }
+  45% { box-shadow: 0 0 64px 14px var(--glow, var(--accent-soft)); opacity: 1; }
+  100% { box-shadow: 0 0 34px 2px var(--glow, var(--accent-soft)); opacity: 0.8; }
+}
+
+/* Gradient fill: the weather circle's lit-from-above disc, for chips that carry content. */
+.gradient-fill { background: radial-gradient(circle at 50% 35%, #1a2533 0%, var(--card) 70%); }
+
+/* Stagger enter: children of a stacked page rise and fade in, 60 ms apart, when the page is shown. */
+.stagger-enter > * { animation: enter 260ms ease-out both; }
+.stagger-enter > :nth-child(2) { animation-delay: 60ms; }
+.stagger-enter > :nth-child(3) { animation-delay: 120ms; }
+.stagger-enter > :nth-child(4) { animation-delay: 180ms; }
+.stagger-enter > :nth-child(5) { animation-delay: 240ms; }
+.stagger-enter > :nth-child(n + 6) { animation-delay: 300ms; }
+@keyframes enter { from { opacity: 0; transform: translateY(12px) scale(0.97); } }
+
+.icon { display: block; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-glow, .bloom > .hero-glow, .bloom-loop > .hero-glow, .stagger-enter > * { animation: none; }
+}

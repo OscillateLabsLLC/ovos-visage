@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ovos-visage"
+description = "Browser GUI client for OpenVoiceOS in the style of the 2018 Mycroft Mark II Kickstarter concept"
+readme = "README.md"
+authors = [{ name = "Mike Gray", email = "mike@oscillatelabs.net" }]
+license = { text = "Apache-2.0" }
+keywords = ["ovos", "mycroft", "mark2", "gui", "voice", "assistant"]
+requires-python = ">=3.10"
+dynamic = ["version"]
+dependencies = [
+    "aiohttp>=3.9",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "ruff",
+    "websocket-client",
+]
+
+[project.scripts]
+ovos-visage = "ovos_visage.app:main"
+
+[project.urls]
+Homepage = "https://github.com/OscillateLabsLLC/ovos-visage"
+Repository = "https://github.com/OscillateLabsLLC/ovos-visage"
+
+[tool.setuptools]
+packages = ["ovos_visage"]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = { attr = "ovos_visage.version.__version__" }
+
+[tool.setuptools.package-data]
+ovos_visage = ["static/*", "static/pages/*", "static/icons/*", "static/face/*", "static/vendor/*"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=ovos_visage --cov-report=term-missing"
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 130
+target-version = "py310"
+extend-exclude = ["docs"]
+
+[tool.uv]
+package = true

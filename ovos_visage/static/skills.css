@@ -1,0 +1,52 @@
+/* Skill pages: date-time (SPEC 8.4) and weather (SPEC 8.3). Tokens come from visage.css :root. */
+
+.skill-header { text-align: center; line-height: 1.3; }
+.skill-header .heading { font-size: 22px; font-weight: 500; }
+.skill-header .location { font-size: 15px; color: var(--muted); }
+.skill-header .heading:empty, .skill-header .location:empty, .skill-details:empty { display: none; }
+.skill-details { font-size: 16px; color: var(--muted); text-align: center; }
+
+/* time: the concept's big blue clock ring */
+.clock-ring { width: 380px; height: 380px; }
+.clock-ring .time { font-size: 120px; }
+.clock-ring .ampm { font-size: 22px; color: var(--accent); margin-top: 4px; letter-spacing: 2px; }
+.clock-ring .date { font-size: 22px; }
+.clock-ring .ring .track { stroke: var(--accent-soft); stroke-width: 4; }
+.clock-ring .ring .value { stroke-width: 5; }
+
+/* date: weekday, day-month, year */
+.date-circle { width: 330px; height: 330px; }
+.date-circle .weekday { font-size: 26px; color: var(--accent); text-transform: capitalize; }
+.date-circle .daymonth { font-size: 54px; font-weight: 300; margin: 6px 0; text-transform: capitalize; max-width: 270px; line-height: 1.1; }
+.date-circle .year { font-size: 26px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* CurrentWeather / SingleDay: big weather circle plus chips */
+.weather-now { width: 270px; height: 270px; background: radial-gradient(circle at 50% 35%, #1a2533 0%, var(--card) 70%); }
+.weather-now .weather-icon { width: 120px; height: 120px; }
+.weather-now .temp { font-size: 76px; font-weight: 300; line-height: 1; margin-top: 2px; font-variant-numeric: tabular-nums; }
+.weather-now ~ .chips .chip { width: 104px; height: 104px; }
+
+/* DailyForecast / HourlyForecast: a column of small circles */
+.forecast-column { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.forecast-item { width: 108px; height: 108px; background: var(--card); gap: 0; }
+.forecast-item .label { font-size: 13px; color: var(--muted); }
+.forecast-item .weather-icon { width: 40px; height: 40px; }
+.forecast-item .temps { display: flex; gap: 8px; align-items: baseline; font-variant-numeric: tabular-nums; }
+.forecast-item .main { font-size: 22px; }
+.forecast-item .sub { font-size: 14px; color: var(--muted); }
+.forecast-column[data-kind="HourlyForecast"] .sub { color: var(--accent); }
+
+/* SunriseSunset: two horizon circles */
+.sun-time { width: 205px; height: 205px; overflow: hidden; }
+.sun-time .weather-icon { width: 64px; height: 64px; }
+.sun-time .value { font-size: 40px; font-weight: 300; margin-top: 6px; font-variant-numeric: tabular-nums; }
+.sun-time .small { font-size: 16px; color: var(--muted); text-transform: uppercase; letter-spacing: 2px; margin-top: 4px; }
+.sun-time.sunrise { background: linear-gradient(180deg, #0d1a28 0%, #1b2c44 60%, #5a3a24 100%); }
+.sun-time.sunset { background: linear-gradient(180deg, #2a1830 0%, #5a2b25 65%, #0d1a28 100%); }
+.sun-time.sunrise .weather-icon { animation: rise 8s ease-in-out infinite alternate; }
+.sun-time.sunset .weather-icon { animation: rise 8s ease-in-out infinite alternate-reverse; }
+@keyframes rise { from { transform: translateY(8px); } to { transform: translateY(-6px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .sun-time .weather-icon { animation: none; }
+}

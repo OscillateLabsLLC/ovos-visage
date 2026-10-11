@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .tick { fill: none; stroke: #3ddc84; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round;
+            stroke-dasharray: 14; stroke-dashoffset: 14; animation: tick 4.5s ease-out infinite; }
+    .t2 { animation-delay: 0.6s; }
+    .t3 { animation-delay: 1.2s; }
+    @keyframes tick { 0% { stroke-dashoffset: 14; } 12%, 80% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 14; } }
+    @media (prefers-reduced-motion: reduce) { .tick { animation: none; stroke-dashoffset: 0; } }
+  </style>
+  <defs>
+    <radialGradient id="dot" cx="0.35" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#5fc0ff"/>
+      <stop offset="1" stop-color="#1e9bff"/>
+    </radialGradient>
+  </defs>
+  <g fill="url(#dot)">
+    <circle cx="16" cy="18" r="6"/>
+    <circle cx="16" cy="32" r="6"/>
+    <circle cx="16" cy="46" r="6"/>
+  </g>
+  <g stroke="#d9e2ec" stroke-width="4" stroke-linecap="round">
+    <path d="M28 18h24M28 32h20M28 46h22"/>
+  </g>
+  <path class="tick" d="M12.5 18l2.5 2.5 5-5"/>
+  <path class="tick t2" d="M12.5 32l2.5 2.5 5-5"/>
+  <path class="tick t3" d="M12.5 46l2.5 2.5 5-5"/>
+</svg>

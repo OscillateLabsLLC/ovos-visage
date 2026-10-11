@@ -1,0 +1,10 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "release-type": "python",
+  "packages": {
+    ".": {
+      "package-name": "ovos-visage",
+      "extra-files": ["ovos_visage/version.py"]
+    }
+  }
+}

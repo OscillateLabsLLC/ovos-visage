@@ -1,0 +1,56 @@
+/* The visage face (SPEC 9): shaded ring eyes and a white round-capped mouth, in the upper half. The mouth is always an
+   outline: the rest smile is a closed sliver, the open visemes hollow shapes, so the morph between them stays visible. */
+.face { display: block; overflow: visible; }
+
+.face .eye {
+  fill: none;
+  transform-box: fill-box; transform-origin: center;
+  transition: transform 0.12s ease-out;
+}
+.face.wide .eye { transform: scale(1.18); }
+.face[data-mode="thinking"] .eye { transform: scaleY(0.62); }
+.face.blink .eye, .face.sleeping .eye { transform: scaleY(0.08); }
+
+.face .lips {
+  fill: none; stroke: var(--fg); stroke-width: var(--lip-stroke, 4);
+  stroke-linejoin: round; stroke-linecap: round;
+}
+.face .bars { display: none; }
+.face[data-mode="listening"] .lips { display: none; }
+.face[data-mode="listening"] .bars { display: inline; }
+.face .bars rect { fill: var(--accent); transform-box: fill-box; transform-origin: center; animation: face-bars 0.9s ease-in-out infinite; }
+.face .bars rect:nth-child(2n) { animation-delay: -0.3s; }
+.face .bars rect:nth-child(3n) { animation-delay: -0.6s; }
+@keyframes face-bars { 0%, 100% { transform: scaleY(0.4); } 50% { transform: scaleY(1.6); } }
+
+.face .badge-disc { fill: rgba(20, 27, 36, 0.92); opacity: 0; transition: opacity 0.3s ease; }
+
+/* The face SVG covers screen rows --face-top .. --face-top + --face-h (set by face.js), at its true screen position. */
+.attention > .face, .face-page > .face {
+  position: absolute; left: 0; top: var(--face-top); width: 100%; height: var(--face-h);
+}
+.face-page { position: absolute; inset: 0; }
+
+/* The attention overlay: the face over the current page while the assistant is listening, thinking or speaking. */
+.attention {
+  position: absolute; inset: 0; pointer-events: none; opacity: 0;
+  background: rgba(5, 7, 10, 0.92); transition: opacity 0.4s ease, background-color 0.3s ease;
+}
+.attention.shown { opacity: 1; }
+
+/* Over a content page the face shrinks to a round badge at the bottom centre and leaves the page undimmed (SPEC 5.3).
+   --face-badge-h must stay 2 * face.js badge.r * --face-badge-scale: 726 * 0.14325 = 104; 104 + 2 * 7 keeps the 118 px strip. */
+:root {
+  --face-badge-scale: 0.14325;
+  --face-badge-h: 104px;
+  --face-badge-gap: 7px;
+  --attention-strip: calc(var(--face-badge-h) + 2 * var(--face-badge-gap));
+}
+.attention > .face { transition: transform 0.3s ease; }
+.attention.compact { background-color: transparent; }
+.attention.compact > .face {
+  transform: translateY(calc(var(--screen-h) - var(--face-badge-gap) - var(--face-badge-h) / 2 - var(--face-top) - var(--face-h) / 2))
+    scale(var(--face-badge-scale));
+}
+.attention.compact > .face .badge-disc { opacity: 1; }
+.screen[data-content="true"] .page { padding-bottom: var(--attention-strip); }

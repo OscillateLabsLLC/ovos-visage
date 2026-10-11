@@ -1,0 +1,21 @@
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "ovos-skill-homescreen.openvoiceos"}]}
+{"type": "mycroft.gui.list.insert", "namespace": "ovos-skill-homescreen.openvoiceos", "position": 0, "data": [{"url": "/home/ovos/.cache/ovos_gui/ovos-skill-homescreen.openvoiceos/qt5/idle.qml", "page": "idle"}]}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification": {}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification_model": []}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"system_connectivity": "offline"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"persistent_menu_hint": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"applications_model": [{"name": "OCP", "thumbnail": "/home/ovos/.cache/ovos_gui/ovos.common_play/OCP.png", "action": "ovos.common_play.OCP.homescreen.app"}, {"name": "File Browser", "thumbnail": "/home/ovos/.cache/ovos_gui/ovos-skill-local-media.openvoiceos/ovos-file-browser.svg", "action": "ovos-skill-local-media.openvoiceos.File Browser.homescreen.app"}]}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"apps_enabled": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "22:28"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"date_string": "10/10/2026"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weekday_string": "Saturday"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"day_string": "10"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"month_string": "October"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"year_string": "2026"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"skill_info_enabled": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"skill_info_prefix": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"rtl_mode": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"dateFormat": "DMY"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_api_enabled": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_code": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_temp": 22.1}}

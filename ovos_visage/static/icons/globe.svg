@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .meridian { fill: none; stroke: #9fd0ff; stroke-width: 2; animation: turn 6s linear infinite; }
+    .m2 { animation-delay: -2s; }
+    .m3 { animation-delay: -4s; }
+    @keyframes turn { 0% { rx: 0; opacity: 0.2; } 50% { rx: 22px; opacity: 0.9; } 100% { rx: 0; opacity: 0.2; } }
+    @media (prefers-reduced-motion: reduce) { .meridian { animation: none; rx: 11px; opacity: 0.7; } }
+  </style>
+  <defs>
+    <radialGradient id="sea" cx="0.35" cy="0.3" r="0.85">
+      <stop offset="0" stop-color="#3fb0ff"/>
+      <stop offset="1" stop-color="#0f4c80"/>
+    </radialGradient>
+    <clipPath id="disc"><circle cx="32" cy="32" r="22"/></clipPath>
+  </defs>
+  <circle cx="32" cy="32" r="22" fill="url(#sea)"/>
+  <g clip-path="url(#disc)">
+    <ellipse class="meridian" cx="32" cy="32" rx="11" ry="22"/>
+    <ellipse class="meridian m2" cx="32" cy="32" rx="11" ry="22"/>
+    <ellipse class="meridian m3" cx="32" cy="32" rx="11" ry="22"/>
+    <path d="M10 24h44M10 40h44M10 32h44" stroke="#9fd0ff" stroke-width="2" opacity="0.6"/>
+  </g>
+  <circle cx="32" cy="32" r="22" fill="none" stroke="#9fd0ff" stroke-width="2"/>
+</svg>

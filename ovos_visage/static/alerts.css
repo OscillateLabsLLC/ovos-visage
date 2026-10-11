@@ -1,0 +1,62 @@
+/* ovos-skill-alerts pages (SPEC 8.5) in the Kickstarter vocabulary (SPEC 9): rings and plain stacked text on black.
+   No cards, nested panels or accent borders; the blue accent is used only for rings. */
+.alerts-header { font-size: 15px; color: var(--muted); text-align: center; letter-spacing: 1px; text-transform: uppercase; }
+
+.timer-stack { display: flex; flex-direction: column; align-items: center; gap: 22px; }
+/* The Timer page sets font-size on each ring to its diameter / 18, so every size below scales with the ring. */
+.timer-ring { padding: 8%; }
+.timer-ring .ring .value { transition: stroke-dashoffset 1s linear, stroke 1.2s ease; }
+/* Tone (alerts_model.js timerTone): the ring and its glow warm from accent to sun to red over the final stretch. */
+.timer-ring[data-tone="warm"] { --glow: rgba(255, 201, 60, 0.32); }
+.timer-ring[data-tone="warm"] .ring .value { stroke: var(--sun); }
+/* A finished timer and a ringing alarm share the red: both are going off now. */
+.timer-ring[data-tone="hot"], .timer-ring[data-tone="done"], .alarm-ringing { --glow: rgba(255, 92, 92, 0.38); }
+.timer-ring[data-tone="hot"] .ring .value, .timer-ring[data-tone="done"] .ring .value, .alarm-ringing .ring .value { stroke: var(--bad); }
+.timer-ring .timer-delta { font-size: 3.6em; font-weight: 300; line-height: 1; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.timer-ring .timer-name { margin-top: 0.45em; font-size: max(11px, 1.1em); color: var(--muted); max-width: 80%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.timer-ring .timer-over { margin-top: 0.2em; font-size: max(11px, 1em); color: var(--muted); font-variant-numeric: tabular-nums; }
+.timer-ring .timer-over:empty { display: none; }
+.timer-ring.expired .timer-delta { font-size: 2.9em; font-weight: 400; }
+.timer-ring.expired .ring { animation: ring-pulse 1s ease-in-out infinite alternate; }
+@keyframes ring-pulse { from { opacity: 1; } to { opacity: 0.35; } }
+
+.alarm-page { display: flex; flex-direction: column; align-items: center; gap: 22px; width: 100%; }
+.alarm-chip { width: 260px; height: 260px; }
+.alarm-chip .alarm-time { font-size: 56px; font-weight: 300; line-height: 1; font-variant-numeric: tabular-nums; }
+.alarm-chip .alarm-name { margin-top: 8px; font-size: 18px; color: var(--muted); max-width: 80%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.alarm-chip .alarm-repeat { margin-top: 2px; font-size: 14px; color: var(--muted); }
+.alarm-page.two .alarm-chip { width: 210px; height: 210px; }
+.alarm-page.two .alarm-chip .alarm-time { font-size: 44px; }
+.alarm-ampm { font-size: 0.35em; margin-left: 6px; color: var(--muted); }
+
+.alarm-bell { flex: none; }
+/* The bell is the hero: about 56 px of visible artwork (0.77 of the SVG box) in the 260 px chip; the time gives way. */
+.alarm-chip .alarm-bell { width: 72px; height: 72px; margin-bottom: 4px; }
+.alarm-page.two .alarm-chip .alarm-bell { width: 52px; height: 52px; margin-bottom: 2px; }
+.alarm-page.two .alarm-chip .alarm-name { margin-top: 4px; font-size: 16px; }
+.alarm-ringing .alarm-bell { animation: bell-shake 0.45s ease-in-out infinite; }
+@keyframes bell-shake { 0%, 100% { transform: rotate(0deg); } 25% { transform: rotate(-14deg); } 75% { transform: rotate(14deg); } }
+
+/* Three or more alarms: a two-by-two grid of gradient circles; the next to fire carries the glow. */
+.alarm-grid { display: grid; grid-template-columns: repeat(2, 170px); gap: 18px 22px; justify-items: center; }
+.alarm-cell { width: 170px; height: 170px; gap: 0; }
+.alarm-cell .alarm-bell { width: 34px; height: 34px; margin-bottom: 2px; }
+.alarm-cell .alarm-time { font-size: 44px; font-weight: 300; line-height: 1.05; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.alarm-cell .alarm-name { margin-top: 2px; font-size: 15px; color: var(--muted); max-width: 128px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.alarm-cell .alarm-label { font-size: 11px; margin-top: 2px; }
+.alarm-more { font-size: 22px; font-weight: 300; color: var(--muted); }
+.alarm-label { font-size: 13px; color: var(--fg); letter-spacing: 1px; text-transform: uppercase; }
+.alarm-none { color: var(--muted); font-size: 18px; }
+
+.alert-list { display: flex; flex-direction: column; align-items: center; gap: 16px; width: 100%; }
+.list-hero { width: 180px; height: 180px; }
+/* About 40 % of the hero: 72 px of visible checklist (0.69 of the SVG box). */
+.list-icon { width: 104px; height: 104px; }
+.list-count { font-size: 28px; font-weight: 300; line-height: 1; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.alert-items { list-style: none; margin: 0; padding: 0; width: 100%; display: flex; flex-direction: column; gap: 16px; text-align: center; }
+.list-main { font-size: 24px; }
+.list-secondary { font-size: 15px; color: var(--muted); margin-top: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .alarm-ringing .alarm-bell, .timer-ring.expired .ring { animation: none; }
+}

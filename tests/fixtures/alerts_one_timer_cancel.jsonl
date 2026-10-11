@@ -1,0 +1,97 @@
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "ovos-skill-homescreen.openvoiceos"}]}
+{"type": "mycroft.gui.list.insert", "namespace": "ovos-skill-homescreen.openvoiceos", "position": 0, "data": [{"url": "/home/ovos/.cache/ovos_gui/ovos-skill-homescreen.openvoiceos/qt5/idle.qml", "page": "idle"}]}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification": {}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification_model": {"storedmodel": [], "count": 0}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"system_connectivity": "offline"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"persistent_menu_hint": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"applications_model": [{"name": "OCP", "thumbnail": "/home/ovos/.cache/ovos_gui/ovos.common_play/OCP.png", "action": "ovos.common_play.OCP.homescreen.app"}, {"name": "File Browser", "thumbnail": "/home/ovos/.cache/ovos_gui/ovos-skill-local-media.openvoiceos/ovos-file-browser.svg", "action": "ovos-skill-local-media.openvoiceos.File Browser.homescreen.app"}]}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"apps_enabled": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:10"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"date_string": "10/10/2026"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weekday_string": "Saturday"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"day_string": "10"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"month_string": "October"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"year_string": "2026"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"skill_info_enabled": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"skill_info_prefix": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"rtl_mode": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"dateFormat": "DMY"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_api_enabled": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_code": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_temp": 21.0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notifcation_counter": 1}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:11"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 0, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 0, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 0, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 0, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:12"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:13"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 1, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 1, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notifcation_counter": 2}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 1, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 1, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:14"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 0, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 0, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.alarm.widget.manager.update", "data": {"count": 1, "action": "ovos.gui.show.pending.alarms"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.alarm.widget.manager.update", "data": {"count": 1, "action": "ovos.gui.show.pending.alarms"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:15"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.alarm.widget.manager.update", "data": {"count": 0, "action": "ovos.gui.show.pending.alarms"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.alarm.widget.manager.update", "data": {"count": 0, "action": "ovos.gui.show.pending.alarms"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:utterance", "data": {"utterances": ["set a timer for 1 minute"], "lang": "en-us"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "AlertSkill.handle_create_timer"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 0, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "speak", "data": {"utterance": "Timer for one minute, starting now.", "expect_response": false, "meta": {"dialog": "confirm_timer_started", "data": {"remaining": "one minute"}, "skill": "ovos-skill-alerts.openvoiceos"}, "lang": "en-US"}}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "ovos-skill-alerts.openvoiceos"}]}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 0, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeAlarmCount": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeAlarms": []}}
+{"type": "mycroft.gui.list.insert", "namespace": "ovos-skill-alerts.openvoiceos", "position": 0, "data": [{"url": null, "page": "Timer"}]}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-alerts.openvoiceos", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999996099719886, "timerName": "set timer", "timeDelta": "0:59"}]}}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_start", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.viseme_list", "data": {"start": 1791692166.791426, "visemes": [["4", 0.325], ["3", 0.45], ["0", 0.525], ["4", 0.575], ["0", 0.625], ["2", 0.675], ["4", 0.725], ["5", 0.75], ["6", 0.775], ["2", 0.8], ["4", 0.85], ["2", 0.95], ["0", 1.0], ["3", 1.025], ["4", 1.075], ["4", 1.125], ["0", 1.175], ["3", 1.25], ["0", 1.325], ["3", 1.375], ["4", 1.45], ["3", 1.5], ["3", 1.6], ["0", 1.65], ["2", 1.7], ["3", 1.75], ["0", 1.8], ["3", 1.85], ["4", 1.9], ["3", 2.1], ["1", 2.725], ["4", 2.975]]}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999965149442785, "timerName": "set timer", "timeDelta": "0:58"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:16"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999980926444542, "timerName": "set timer", "timeDelta": "0:57"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999982343413296, "timerName": "set timer", "timeDelta": "0:56"}]}}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_end", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "AlertSkill.handle_create_timer"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "ovos.utterance.handled", "data": {}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999984861246097, "timerName": "set timer", "timeDelta": "0:55"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999972924161922, "timerName": "set timer", "timeDelta": "0:54"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999979369156369, "timerName": "set timer", "timeDelta": "0:53"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999980874941433, "timerName": "set timer", "timeDelta": "0:52"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999973927367196, "timerName": "set timer", "timeDelta": "0:51"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.999997822020105, "timerName": "set timer", "timeDelta": "0:50"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999978773098789, "timerName": "set timer", "timeDelta": "0:49"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999977689534858, "timerName": "set timer", "timeDelta": "0:47"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999975642924692, "timerName": "set timer", "timeDelta": "0:46"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999969538634961, "timerName": "set timer", "timeDelta": "0:45"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.999997418550113, "timerName": "set timer", "timeDelta": "0:44"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999970338409315, "timerName": "set timer", "timeDelta": "0:43"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999982381113173, "timerName": "set timer", "timeDelta": "0:42"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999963435529236, "timerName": "set timer", "timeDelta": "0:41"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999974747821566, "timerName": "set timer", "timeDelta": "0:40"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999974539095402, "timerName": "set timer", "timeDelta": "0:39"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999979367972026, "timerName": "set timer", "timeDelta": "0:38"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.99999621389849, "timerName": "set timer", "timeDelta": "0:37"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-alerts.openvoiceos", "data": {"activeTimers": {"timers": [{"alertId": "24940d68-b3f5-4cd2-82ab-23e8ab237598", "backgroundColor": "", "expired": false, "percentRemaining": 0.9999978925059105, "timerName": "set timer", "timeDelta": "0:36"}]}}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:utterance", "data": {"utterances": ["cancel timer"], "lang": "en-us"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "AlertSkill.handle_cancel_alert"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 0, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 0, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 0, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "speak", "data": {"utterance": "Cancelling the timer called set.", "expect_response": false, "meta": {"dialog": "confirm_cancel_alert", "data": {"kind": "timer", "name": "set"}, "skill": "ovos-skill-alerts.openvoiceos"}, "lang": "en-US"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.eyes.blink", "data": {"side": "b"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_start", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.viseme_list", "data": {"start": 1791692191.343636, "visemes": [["4", 0.325], ["3", 0.45], ["0", 0.5], ["3", 0.55], ["3", 0.6], ["0", 0.65], ["3", 0.7], ["0", 0.75], ["3", 0.775], ["4", 0.8], ["3", 0.825], ["0", 0.85], ["4", 0.925], ["3", 1.1], ["0", 1.175], ["4", 1.225], ["0", 1.275], ["2", 1.325], ["4", 1.375], ["3", 1.5], ["6", 1.575], ["3", 1.65], ["3", 1.7], ["4", 1.8], ["3", 1.975], ["0", 2.075], ["3", 2.575], ["4", 2.825]]}}
+{"type": "mycroft.session.delete", "property": "activeAlarmCount", "namespace": "ovos-skill-alerts.openvoiceos"}
+{"type": "mycroft.session.delete", "property": "activeAlarms", "namespace": "ovos-skill-alerts.openvoiceos"}
+{"type": "mycroft.session.delete", "property": "activeTimers", "namespace": "ovos-skill-alerts.openvoiceos"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 0, "items_number": 1}

@@ -1,0 +1,61 @@
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "ovos-skill-homescreen.openvoiceos"}]}
+{"type": "mycroft.gui.list.insert", "namespace": "ovos-skill-homescreen.openvoiceos", "position": 0, "data": [{"url": "/home/ovos/.cache/ovos_gui/ovos-skill-homescreen.openvoiceos/qt5/idle.qml", "page": "idle"}]}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification": {}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification_model": []}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"system_connectivity": "offline"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"persistent_menu_hint": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"applications_model": [{"name": "OCP", "thumbnail": "/home/ovos/.cache/ovos_gui/ovos.common_play/OCP.png", "action": "ovos.common_play.OCP.homescreen.app"}, {"name": "File Browser", "thumbnail": "/home/ovos/.cache/ovos_gui/ovos-skill-local-media.openvoiceos/ovos-file-browser.svg", "action": "ovos-skill-local-media.openvoiceos.File Browser.homescreen.app"}]}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"apps_enabled": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "22:53"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"date_string": "10/10/2026"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weekday_string": "Saturday"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"day_string": "10"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"month_string": "October"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"year_string": "2026"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"skill_info_enabled": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"skill_info_prefix": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"rtl_mode": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"dateFormat": "DMY"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_api_enabled": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_code": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_temp": 21.7}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:utterance", "data": {"utterances": ["what is the weather tomorrow"], "lang": "en-us"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "WeatherSkill.handle_weather"}}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "ovos-skill-weather.openvoiceos"}]}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-weather.openvoiceos", "data": {"weatherLocation": "San Antonio, United States"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-weather.openvoiceos", "data": {"weatherCode": 2}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-weather.openvoiceos", "data": {"weatherDate": "Sun, 11 October"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-weather.openvoiceos", "data": {"highTemperature": 31.7}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-weather.openvoiceos", "data": {"lowTemperature": 17.5}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.events.deactivate", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.weather.display", "data": {"img_code": 1, "temp": 24.6}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-weather.openvoiceos", "data": {"chanceOfPrecipitation": "3"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-weather.openvoiceos", "data": {"windSpeed": 7.45}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-weather.openvoiceos", "data": {"humidity": 51}}
+{"type": "mycroft.gui.list.insert", "namespace": "ovos-skill-weather.openvoiceos", "position": 0, "data": [{"url": null, "page": "SingleDay"}]}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-weather.openvoiceos", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_start", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.viseme_list", "data": {"start": 1791690814.561716, "visemes": [["4", 0.35], ["0", 0.375], ["3", 0.4], ["4", 0.45], ["0", 0.5], ["3", 0.55], ["4", 0.6], ["3", 0.65], ["2", 0.7], ["0", 0.725], ["3", 0.75], ["3", 0.8], ["0", 0.875], ["4", 0.95], ["3", 1.1], ["2", 1.175], ["4", 1.275], ["5", 1.375], ["6", 1.425], ["2", 1.475], ["3", 1.55], ["0", 1.6], ["4", 1.65], ["3", 1.85], ["0", 1.975], ["3", 2.3], ["4", 2.475]]}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.eyes.blink", "data": {"side": "b"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.reset", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.events.activate", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "speak", "data": {"utterance": "sunday the high will be 31.7 and the low 17.5, with overcast", "expect_response": false, "meta": {"dialog": "daily_weather_local", "data": {"condition": "overcast", "day": "sunday", "high_temperature": 31.7, "low_temperature": 17.5}, "skill": "ovos-skill-weather.openvoiceos"}, "lang": "en-US"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_start", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.viseme_list", "data": {"start": 1791690817.374231, "visemes": [["4", 0.325], ["3", 0.425], ["0", 0.45], ["3", 0.5], ["3", 0.575], ["0", 0.625], ["4", 0.65], ["3", 0.675], ["0", 0.7], ["4", 0.75], ["0", 0.9], ["0", 0.95], ["4", 1.0], ["2", 1.025], ["0", 1.05], ["3", 1.075], ["4", 1.125], ["4", 1.175], ["0", 1.225], ["4", 1.3], ["3", 1.375], ["2", 1.425], ["2", 1.475], ["3", 1.525], ["0", 1.575], ["4", 1.625], ["2", 1.7], ["0", 1.75], ["3", 1.8], ["4", 1.85], ["4", 1.925], ["6", 2.0], ["3", 2.05], ["3", 2.075], ["4", 2.15], ["3", 2.25], ["0", 2.3], ["5", 2.35], ["0", 2.425], ["3", 2.55], ["4", 2.6], ["0", 2.625], ["3", 2.65], ["3", 2.675], ["4", 2.7], ["3", 2.725], ["0", 2.75], ["4", 2.8], ["3", 2.95], ["2", 3.025], ["4", 3.075], ["3", 3.15], ["0", 3.2], ["5", 3.25], ["0", 3.3], ["3", 3.375], ["3", 3.475], ["0", 3.525], ["3", 3.575], ["4", 3.625], ["4", 3.7], ["6", 3.75], ["3", 3.8], ["3", 3.825], ["4", 3.9], ["5", 4.1], ["0", 4.225], ["5", 4.3], ["4", 4.4], ["2", 4.425], ["0", 4.475], ["3", 4.5], ["4", 4.6], ["2", 4.65], ["5", 4.675], ["0", 4.7], ["2", 4.775], ["3", 4.975], ["0", 5.075], ["3", 5.15], ["3", 5.7], ["4", 5.975]]}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_end", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "WeatherSkill.handle_weather"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "ovos.utterance.handled", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_end", "data": {}}
+{"type": "mycroft.session.delete", "property": "weatherLocation", "namespace": "ovos-skill-weather.openvoiceos"}
+{"type": "mycroft.session.delete", "property": "weatherCode", "namespace": "ovos-skill-weather.openvoiceos"}
+{"type": "mycroft.session.delete", "property": "weatherDate", "namespace": "ovos-skill-weather.openvoiceos"}
+{"type": "mycroft.session.delete", "property": "highTemperature", "namespace": "ovos-skill-weather.openvoiceos"}
+{"type": "mycroft.session.delete", "property": "lowTemperature", "namespace": "ovos-skill-weather.openvoiceos"}
+{"type": "mycroft.session.delete", "property": "chanceOfPrecipitation", "namespace": "ovos-skill-weather.openvoiceos"}
+{"type": "mycroft.session.delete", "property": "windSpeed", "namespace": "ovos-skill-weather.openvoiceos"}
+{"type": "mycroft.session.delete", "property": "humidity", "namespace": "ovos-skill-weather.openvoiceos"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 0, "items_number": 1}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "22:54"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_start", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.viseme_list", "data": {"start": 1791690869.238821, "visemes": [["4", 0.35], ["0", 0.375], ["3", 0.4], ["4", 0.45], ["0", 0.5], ["3", 0.55], ["4", 0.6], ["3", 0.65], ["2", 0.7], ["0", 0.725], ["3", 0.75], ["3", 0.8], ["0", 0.875], ["4", 0.95], ["3", 1.1], ["2", 1.175], ["4", 1.275], ["5", 1.375], ["6", 1.425], ["2", 1.475], ["3", 1.55], ["0", 1.6], ["4", 1.65], ["3", 1.85], ["0", 1.975], ["3", 2.3], ["4", 2.475]]}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_end", "data": {}}

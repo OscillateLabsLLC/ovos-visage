@@ -1,0 +1,95 @@
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "ovos.common_play"}]}
+{"type": "mycroft.gui.list.insert", "namespace": "ovos.common_play", "position": 0, "data": [{"url": "/home/ovos/.cache/ovos_gui/ovos.common_play/qt5/busy.qml", "page": "busy"}]}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 1, "data": [{"skill_id": "ovos-skill-homescreen.openvoiceos"}]}
+{"type": "mycroft.gui.list.insert", "namespace": "ovos-skill-homescreen.openvoiceos", "position": 0, "data": [{"url": "/home/ovos/.cache/ovos_gui/ovos-skill-homescreen.openvoiceos/qt5/idle.qml", "page": "idle"}]}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification": {}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification_model": {"storedmodel": [], "count": 0}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"system_connectivity": "offline"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"persistent_menu_hint": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"applications_model": [{"name": "OCP", "thumbnail": "/home/ovos/.cache/ovos_gui/ovos.common_play/OCP.png", "action": "ovos.common_play.OCP.homescreen.app"}, {"name": "File Browser", "thumbnail": "/home/ovos/.cache/ovos_gui/ovos-skill-local-media.openvoiceos/ovos-file-browser.svg", "action": "ovos-skill-local-media.openvoiceos.File Browser.homescreen.app"}]}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"apps_enabled": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:46"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"date_string": "10/10/2026"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weekday_string": "Saturday"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"day_string": "10"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"month_string": "October"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"year_string": "2026"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"skill_info_enabled": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"skill_info_prefix": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"rtl_mode": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"dateFormat": "DMY"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_api_enabled": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_code": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_temp": 20.7}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notifcation_counter": 2}}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"text": "Three teaspoons make one tablespoon."}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"title": "Unit conversion"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates", "position": 0, "data": [{"url": null, "page": "SYSTEM_TextFrame"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:47"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"text": "A teaspoon is about five millilitres, a tablespoon is three teaspoons, and a cup is sixteen tablespoons. So a cup holds forty-eight teaspoons, or roughly two hundred and forty millilitres. In the United Kingdom the cup was historically larger, about two hundred and eighty-four millilitres, but most modern recipes use the metric cup of two hundred and fifty millilitres. When a recipe says a scant cup it means slightly less than full; a heaping tablespoon is mounded above the rim. Dry ingredients should be levelled with a knife, and flour should be spooned into the cup rather than scooped."}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"title": null}}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.delete", "property": "text", "namespace": "visage-templates"}
+{"type": "mycroft.session.delete", "property": "title", "namespace": "visage-templates"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 0, "items_number": 1}
+{"type": "mycroft.events.triggered", "namespace": "ovos.common_play", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"text": "A teaspoon is about five millilitres, a tablespoon is three teaspoons, and a cup is sixteen tablespoons. So a cup holds forty-eight teaspoons, or roughly two hundred and forty millilitres. In the United Kingdom the cup was historically larger, about two hundred and eighty-four millilitres, but most modern recipes use the metric cup of two hundred and fifty millilitres. When a recipe says a scant cup it means slightly less than full; a heaping tablespoon is mounded above the rim. Dry ingredients should be levelled with a knife, and flour should be spooned into the cup rather than scooped."}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates", "position": 0, "data": [{"url": null, "page": "SYSTEM_TextFrame"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:48"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"text": "Three teaspoons make one tablespoon."}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"title": "Unit conversion"}}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"label": "Looking that up"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates", "position": 1, "data": [{"url": null, "page": "SYSTEM_Loading"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates", "event_name": "page_gained_focus", "data": {"number": 1}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"status": "Enabled"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"label": "Wi-Fi connected"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates", "position": 2, "data": [{"url": null, "page": "SYSTEM_Status"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates", "event_name": "page_gained_focus", "data": {"number": 2}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"status": "Disabled"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"label": "Microphone muted"}}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates", "event_name": "page_gained_focus", "data": {"number": 2}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"image": "/home/ovos/.cache/ovos_gui/ovos-skill-weather.openvoiceos/qt5/images/sun.svg"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"title": "Clear sky"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"caption": "Cache path served at /res/"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"fill": "fit"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"background_color": "#0d1a28"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates", "position": 3, "data": [{"url": null, "page": "SYSTEM_ImageFrame"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates", "event_name": "page_gained_focus", "data": {"number": 3}}
+{"type": "mycroft.session.delete", "property": "text", "namespace": "visage-templates"}
+{"type": "mycroft.session.delete", "property": "title", "namespace": "visage-templates"}
+{"type": "mycroft.session.delete", "property": "label", "namespace": "visage-templates"}
+{"type": "mycroft.session.delete", "property": "status", "namespace": "visage-templates"}
+{"type": "mycroft.session.delete", "property": "image", "namespace": "visage-templates"}
+{"type": "mycroft.session.delete", "property": "caption", "namespace": "visage-templates"}
+{"type": "mycroft.session.delete", "property": "fill", "namespace": "visage-templates"}
+{"type": "mycroft.session.delete", "property": "background_color", "namespace": "visage-templates"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 0, "items_number": 1}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Fronalpstock_big.jpg/640px-Fronalpstock_big.jpg"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"caption": "http image, fill crop"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"fill": "crop"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates", "position": 0, "data": [{"url": null, "page": "SYSTEM_ImageFrame"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.gui.list.remove", "namespace": "ovos.common_play", "position": 0, "items_number": 1}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"image": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='30' fill='%231e9bff'><animate attributeName='r' values='20;40;20' dur='1.5s' repeatCount='indefinite'/></circle></svg>"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"title": "Animated"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"caption": "data: URI"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates", "data": {"fill": "fit"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates", "position": 1, "data": [{"url": null, "page": "SYSTEM_AnimatedImageFrame"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates", "event_name": "page_gained_focus", "data": {"number": 1}}
+{"type": "mycroft.events.triggered", "namespace": "ovos.common_play", "event_name": "ocp.gui.show.suggestion.view.playlist", "data": {}}
+{"type": "mycroft.gui.list.insert", "namespace": "ovos.common_play", "position": 0, "data": [{"url": null, "page": "PlayerLoader"}, {"url": null, "page": "SuggestionsView"}]}
+{"type": "mycroft.events.triggered", "namespace": "ovos.common_play", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.delete", "property": "image", "namespace": "visage-templates"}
+{"type": "mycroft.session.delete", "property": "caption", "namespace": "visage-templates"}
+{"type": "mycroft.session.delete", "property": "fill", "namespace": "visage-templates"}
+{"type": "mycroft.session.delete", "property": "title", "namespace": "visage-templates"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 1, "items_number": 1}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:49"}}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates-image-http"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates-image-http", "data": {"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Fronalpstock_big.jpg/500px-Fronalpstock_big.jpg"}}

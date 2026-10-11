@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .bolt { animation: flash 4s ease-out infinite; }
+    @keyframes flash { 0%, 70%, 100% { opacity: 1; } 74% { opacity: 0.2; } 78% { opacity: 1; } 82% { opacity: 0.4; } }
+    @media (prefers-reduced-motion: reduce) { .bolt { animation: none; } }
+  </style>
+  <path d="M18 44h30a10 10 0 0 0 0-20 14 14 0 0 0-26.5-3A10.5 10.5 0 0 0 18 44z" fill="#d9e2ec"/>
+  <path class="bolt" d="M34 44l-8 11h7l-4 9 11-13h-7l4-7z" fill="#ffc93c"/>
+</svg>

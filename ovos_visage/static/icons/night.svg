@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .star { animation: twinkle 3s ease-in-out infinite; }
+    .star:nth-of-type(2) { animation-delay: -1.5s; }
+    @keyframes twinkle { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+    @media (prefers-reduced-motion: reduce) { .star { animation: none; } }
+  </style>
+  <defs>
+    <mask id="crescent">
+      <rect width="64" height="64" fill="#fff"/>
+      <circle cx="40" cy="24" r="15" fill="#000"/>
+    </mask>
+  </defs>
+  <circle cx="30" cy="34" r="19" fill="#e6ecf8" mask="url(#crescent)"/>
+  <g fill="#ffe27a">
+    <circle class="star" cx="50" cy="12" r="2.5"/>
+    <circle class="star" cx="56" cy="30" r="1.8"/>
+  </g>
+</svg>

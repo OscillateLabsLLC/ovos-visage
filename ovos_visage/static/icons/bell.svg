@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .bell { transform-origin: 32px 9px; animation: swing 3.2s ease-in-out infinite; }
+    .clapper { transform-origin: 32px 12px; animation: swing 3.2s ease-in-out -0.25s infinite; }
+    @keyframes swing { 0%, 70%, 100% { transform: rotate(0deg); } 76% { transform: rotate(14deg); } 84% { transform: rotate(-11deg); } 91% { transform: rotate(6deg); } 96% { transform: rotate(-3deg); } }
+    @media (prefers-reduced-motion: reduce) { .bell, .clapper { animation: none; } }
+  </style>
+  <defs>
+    <radialGradient id="brass" cx="0.38" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#ffe9a3"/>
+      <stop offset="0.55" stop-color="#ffc93c"/>
+      <stop offset="1" stop-color="#d99a12"/>
+    </radialGradient>
+  </defs>
+  <circle class="clapper" cx="32" cy="50" r="5" fill="#d99a12"/>
+  <g class="bell">
+    <circle cx="32" cy="9" r="3.5" fill="#ffc93c"/>
+    <path d="M32 11c-9.5 0-15 7-15 16v9c0 3-2.5 5.5-5 7.5h40c-2.5-2-5-4.5-5-7.5v-9c0-9-5.5-16-15-16z" fill="url(#brass)"/>
+    <rect x="11" y="42" width="42" height="4" rx="2" fill="#d99a12"/>
+  </g>
+</svg>

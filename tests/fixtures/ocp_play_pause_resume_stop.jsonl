@@ -1,0 +1,118 @@
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "ovos.common_play"}]}
+{"type": "mycroft.gui.list.insert", "namespace": "ovos.common_play", "position": 0, "data": [{"url": "/home/ovos/.cache/ovos_gui/ovos.common_play/qt5/PlayerLoader.qml", "page": "PlayerLoader"}, {"url": "/home/ovos/.cache/ovos_gui/ovos.common_play/qt5/SuggestionsView.qml", "page": "SuggestionsView"}]}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"canResume": true}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"canPause": true}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"canPrev": false}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"canNext": false}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"loopStatus": "None"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"shuffleStatus": false}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"media": {"uri": "https://ice1.somafm.com/groovesalad-128-mp3", "title": "Groove Salad", "artist": "SomaFM", "match_confidence": 100, "skill_id": "visage-ocp-test", "playback": 3, "status": 1, "media_type": 7, "length": 0, "image": "https://somafm.com/img3/groovesalad-400.jpg", "skill_icon": "", "javascript": "", "position": 0, "phrase": null, "bg_image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp_bg.png", "is_cps": false, "data": {}, "cps_data": {}, "duration": 0, "track": "Groove Salad", "album": "visage-ocp-test", "source": ""}}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"uri": "https://ice1.somafm.com/groovesalad-128-mp3"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"title": "Groove Salad"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"image": "https://somafm.com/img3/groovesalad-400.jpg"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"artist": "SomaFM"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"bg_image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp_bg.png"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"duration": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"position": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"javascript": ""}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"javascriptCanOpenWindows": false}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"allowUrlChange": false}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"playlistModel": {"data": [{"duration": 0, "track": "Groove Salad", "image": "https://somafm.com/img3/groovesalad-400.jpg", "album": "visage-ocp-test", "source": "", "uri": "https://ice1.somafm.com/groovesalad-128-mp3"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"stream": "https://ice1.somafm.com/groovesalad-128-mp3"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"status": "Stopped"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"app_view_timeout_enabled": false}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"app_view_timeout": 30}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"app_view_timeout_mode": "all"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"playerBackend": "OVOSSyncPlayer"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"footer_text": "Searching..."}}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 1, "data": [{"skill_id": "ovos-skill-homescreen.openvoiceos"}]}
+{"type": "mycroft.gui.list.insert", "namespace": "ovos-skill-homescreen.openvoiceos", "position": 0, "data": [{"url": "/home/ovos/.cache/ovos_gui/ovos-skill-homescreen.openvoiceos/qt5/idle.qml", "page": "idle"}]}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification": {}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification_model": {"storedmodel": [], "count": 0}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"system_connectivity": "offline"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"persistent_menu_hint": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"applications_model": [{"name": "OCP", "thumbnail": "/home/ovos/.cache/ovos_gui/ovos.common_play/OCP.png", "action": "ovos.common_play.OCP.homescreen.app"}, {"name": "File Browser", "thumbnail": "/home/ovos/.cache/ovos_gui/ovos-skill-local-media.openvoiceos/ovos-file-browser.svg", "action": "ovos-skill-local-media.openvoiceos.File Browser.homescreen.app"}]}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"apps_enabled": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:51"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"date_string": "10/10/2026"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weekday_string": "Saturday"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"day_string": "10"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"month_string": "October"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"year_string": "2026"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"skill_info_enabled": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"skill_info_prefix": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"rtl_mode": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"dateFormat": "DMY"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_api_enabled": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_code": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_temp": 20.7}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notifcation_counter": 2}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.display", "data": {"img_code": "aIAAAAAAAAAAAAAAAAAAAAAAAAAEAOOHGAGEGOOHAAAAAAAAAAAAAAAAAAAAAAAAAA", "xOffset": 0, "yOffset": 0, "clearPrev": true}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"media": {"uri": "https://ice1.somafm.com/groovesalad-128-mp3", "title": "Groove Salad", "artist": "SomaFM", "match_confidence": 100, "skill_id": "visage-ocp-test", "playback": 2, "status": 1, "media_type": 7, "length": 0, "image": "https://somafm.com/img3/groovesalad-400.jpg", "skill_icon": "", "javascript": "", "position": 0, "phrase": null, "bg_image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp_bg.png", "is_cps": false, "data": {}, "cps_data": {}, "duration": 0, "track": "Groove Salad", "album": "visage-ocp-test", "source": ""}}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"title": "Extracting info from: https://ice1.somafm.com/groovesalad-128-mp3"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"media": {"uri": "https://ice1.somafm.com/groovesalad-128-mp3", "title": "Groove Salad", "artist": "SomaFM", "match_confidence": 100, "skill_id": "visage-ocp-test", "playback": 3, "status": 1, "media_type": 7, "length": 0, "image": "https://somafm.com/img3/groovesalad-400.jpg", "skill_icon": "", "javascript": "", "position": 0, "phrase": null, "bg_image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp_bg.png", "is_cps": false, "data": {}, "cps_data": {}, "duration": 0, "track": "Groove Salad", "album": "visage-ocp-test", "source": ""}}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"title": "Groove Salad"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos.common_play", "event_name": "ocp.gui.show.suggestion.view.playlist", "data": {}}
+{"type": "mycroft.session.list.move", "namespace": "mycroft.system.active_skills", "from": 0, "to": 0, "items_number": 1}
+{"type": "mycroft.events.triggered", "namespace": "ovos.common_play", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"status": "Playing"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.display", "data": {"img_code": "aIAAAAAAAAAAAAAAAAAAAAAAAAAEAOOHGAGEGOOHAAAAAAAAAAAAAAAAAAAAAAAAAA", "xOffset": 0, "yOffset": 0, "clearPrev": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:52"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:utterance", "data": {"utterances": ["pause"], "lang": "en-us"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"status": "Paused"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:utterance", "data": {"utterances": ["resume"], "lang": "en-us"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"status": "Playing"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "ovos.utterance.handled", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.display", "data": {"img_code": "aIAAAAAAAAAAAAAAAAAAAAAAAAAEAOOHGAGEGOOHAAAAAAAAAAAAAAAAAAAAAAAAAA", "xOffset": 0, "yOffset": 0, "clearPrev": true}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"status": "Paused"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"media": {"uri": "https://ice1.somafm.com/groovesalad-128-mp3", "title": "Groove Salad (finite test)", "artist": "SomaFM", "match_confidence": 100, "skill_id": "visage-ocp-test", "playback": 2, "status": 1, "media_type": 7, "length": 213000, "image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp.png", "skill_icon": "", "javascript": "", "position": 0, "phrase": null, "bg_image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp_bg.png", "is_cps": false, "data": {}, "cps_data": {}, "duration": 213000, "track": "Groove Salad (finite test)", "album": "visage-ocp-test", "source": ""}}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"title": "Groove Salad (finite test)"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp.png"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"duration": 213000}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"playlistModel": {"data": [{"duration": 213000, "track": "Groove Salad (finite test)", "image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp.png", "album": "visage-ocp-test", "source": "", "uri": "https://ice1.somafm.com/groovesalad-128-mp3"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"title": "Extracting info from: https://ice1.somafm.com/groovesalad-128-mp3"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"media": {"uri": "https://ice1.somafm.com/groovesalad-128-mp3", "title": "Groove Salad (finite test)", "artist": "SomaFM", "match_confidence": 100, "skill_id": "visage-ocp-test", "playback": 3, "status": 1, "media_type": 7, "length": 213000, "image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp.png", "skill_icon": "", "javascript": "", "position": 0, "phrase": null, "bg_image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp_bg.png", "is_cps": false, "data": {}, "cps_data": {}, "duration": 213000, "track": "Groove Salad (finite test)", "album": "visage-ocp-test", "source": ""}}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"title": "Groove Salad (finite test)"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos.common_play", "event_name": "ocp.gui.show.suggestion.view.playlist", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "ovos.common_play", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"status": "Playing"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.display", "data": {"img_code": "aIAAAAAAAAAAAAAAAAAAAAAAAAAEAOOHGAGEGOOHAAAAAAAAAAAAAAAAAAAAAAAAAA", "xOffset": 0, "yOffset": 0, "clearPrev": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:53"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.display", "data": {"img_code": "aIAAAAAAAAAAAAAAAAAAAAAAAAAEAOOHGAGEGOOHAAAAAAAAAAAAAAAAAAAAAAAAAA", "xOffset": 0, "yOffset": 0, "clearPrev": true}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"status": "Paused"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"media": {"uri": "https://ice1.somafm.com/groovesalad-128-mp3", "title": "Groove Salad (finite test 2)", "artist": "SomaFM", "match_confidence": 100, "skill_id": "visage-ocp-test", "playback": 2, "status": 1, "media_type": 7, "length": 213000, "image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp.png", "skill_icon": "", "javascript": "", "position": 0, "phrase": null, "bg_image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp_bg.png", "is_cps": false, "data": {}, "cps_data": {}, "duration": 213000, "track": "Groove Salad (finite test 2)", "album": "visage-ocp-test", "source": ""}}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"title": "Groove Salad (finite test 2)"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"playlistModel": {"data": [{"duration": 213000, "track": "Groove Salad (finite test 2)", "image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp.png", "album": "visage-ocp-test", "source": "", "uri": "https://ice1.somafm.com/groovesalad-128-mp3"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"title": "Extracting info from: https://ice1.somafm.com/groovesalad-128-mp3"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"media": {"uri": "https://ice1.somafm.com/groovesalad-128-mp3", "title": "Groove Salad (finite test 2)", "artist": "SomaFM", "match_confidence": 100, "skill_id": "visage-ocp-test", "playback": 3, "status": 1, "media_type": 7, "length": 213000, "image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp.png", "skill_icon": "", "javascript": "", "position": 0, "phrase": null, "bg_image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp_bg.png", "is_cps": false, "data": {}, "cps_data": {}, "duration": 213000, "track": "Groove Salad (finite test 2)", "album": "visage-ocp-test", "source": ""}}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"title": "Groove Salad (finite test 2)"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos.common_play", "event_name": "ocp.gui.show.suggestion.view.playlist", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "ovos.common_play", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.display", "data": {"img_code": "aIAAAAAAAAAAAAAAAAAAAAAAAAAEAOOHGAGEGOOHAAAAAAAAAAAAAAAAAAAAAAAAAA", "xOffset": 0, "yOffset": 0, "clearPrev": true}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"status": "Playing"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.display", "data": {"img_code": "aIAAAAAAAAAAAAAAAAAAAAAAAAAEAOOHGAGEGOOHAAAAAAAAAAAAAAAAAAAAAAAAAA", "xOffset": 0, "yOffset": 0, "clearPrev": true}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"status": "Paused"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"media": {"uri": "https://ice1.somafm.com/groovesalad-128-mp3", "title": "Groove Salad (finite test 3)", "artist": "SomaFM", "match_confidence": 100, "skill_id": "visage-ocp-test", "playback": 2, "status": 1, "media_type": 7, "length": 213000, "image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp.png", "skill_icon": "", "javascript": "", "position": 0, "phrase": null, "bg_image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp_bg.png", "is_cps": false, "data": {}, "cps_data": {}, "duration": 213000, "track": "Groove Salad (finite test 3)", "album": "visage-ocp-test", "source": ""}}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"title": "Groove Salad (finite test 3)"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"playlistModel": {"data": [{"duration": 213000, "track": "Groove Salad (finite test 3)", "image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp.png", "album": "visage-ocp-test", "source": "", "uri": "https://ice1.somafm.com/groovesalad-128-mp3"}]}}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"title": "Extracting info from: https://ice1.somafm.com/groovesalad-128-mp3"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"media": {"uri": "https://ice1.somafm.com/groovesalad-128-mp3", "title": "Groove Salad (finite test 3)", "artist": "SomaFM", "match_confidence": 100, "skill_id": "visage-ocp-test", "playback": 3, "status": 1, "media_type": 7, "length": 213000, "image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp.png", "skill_icon": "", "javascript": "", "position": 0, "phrase": null, "bg_image": "/home/ovos/.venvs/ovos/lib/python3.11/site-packages/ovos_plugin_common_play/ocp/res/ui/images/ocp_bg.png", "is_cps": false, "data": {}, "cps_data": {}, "duration": 213000, "track": "Groove Salad (finite test 3)", "album": "visage-ocp-test", "source": ""}}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"title": "Groove Salad (finite test 3)"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos.common_play", "event_name": "ocp.gui.show.suggestion.view.playlist", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "ovos.common_play", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"status": "Playing"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.display", "data": {"img_code": "aIAAAAAAAAAAAAAAAAAAAAAAAAAEAOOHGAGEGOOHAAAAAAAAAAAAAAAAAAAAAAAAAA", "xOffset": 0, "yOffset": 0, "clearPrev": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:54"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:utterance", "data": {"utterances": ["stop"], "lang": "en-us"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "OCPMediaPlayer._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "OCP._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "OCP._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "StopService.handle_skill_stop"}}
+{"type": "mycroft.session.set", "namespace": "ovos.common_play", "data": {"status": "Stopped"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "OCPPipelineMatcher._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "MycroftCPSLegacyPipeline._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "StopService.handle_skill_stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "OCPMediaPlayer._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "ovos.utterance.handled", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "MycroftCPSLegacyPipeline._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "OCPPipelineMatcher._handle_session_stop", "intent_name": "stop"}}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .band { animation: drift 6s ease-in-out infinite alternate; }
+    .band:nth-of-type(2n) { animation-direction: alternate-reverse; }
+    @keyframes drift { from { transform: translateX(-3px); } to { transform: translateX(3px); } }
+    @media (prefers-reduced-motion: reduce) { .band { animation: none; } }
+  </style>
+  <g stroke="#d9e2ec" stroke-width="4" stroke-linecap="round">
+    <path class="band" d="M10 22h44"/>
+    <path class="band" d="M6 32h52"/>
+    <path class="band" d="M12 42h40"/>
+    <path class="band" d="M18 52h28"/>
+  </g>
+</svg>

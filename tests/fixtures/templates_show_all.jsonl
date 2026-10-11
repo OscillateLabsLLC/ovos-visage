@@ -1,0 +1,147 @@
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "ovos-skill-homescreen.openvoiceos"}]}
+{"type": "mycroft.gui.list.insert", "namespace": "ovos-skill-homescreen.openvoiceos", "position": 0, "data": [{"url": "/home/ovos/.cache/ovos_gui/ovos-skill-homescreen.openvoiceos/qt5/idle.qml", "page": "idle"}]}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification": {}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification_model": {"storedmodel": [], "count": 0}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"system_connectivity": "offline"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"persistent_menu_hint": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"applications_model": [{"name": "OCP", "thumbnail": "/home/ovos/.cache/ovos_gui/ovos.common_play/OCP.png", "action": "ovos.common_play.OCP.homescreen.app"}, {"name": "File Browser", "thumbnail": "/home/ovos/.cache/ovos_gui/ovos-skill-local-media.openvoiceos/ovos-file-browser.svg", "action": "ovos-skill-local-media.openvoiceos.File Browser.homescreen.app"}]}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"apps_enabled": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:46"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"date_string": "10/10/2026"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weekday_string": "Saturday"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"day_string": "10"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"month_string": "October"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"year_string": "2026"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"skill_info_enabled": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"skill_info_prefix": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"rtl_mode": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"dateFormat": "DMY"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_api_enabled": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_code": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_temp": 20.7}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notifcation_counter": 2}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:47"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:48"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:49"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:50"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:51"}}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates-text"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates-text", "data": {"text": "Three teaspoons make one tablespoon."}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-text", "data": {"title": "Unit conversion"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates-text", "position": 0, "data": [{"url": null, "page": "SYSTEM_TextFrame"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates-text", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates-text-long"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates-text-long", "data": {"text": "A teaspoon is about five millilitres, a tablespoon is three teaspoons, and a cup is sixteen tablespoons. So a cup holds forty-eight teaspoons, or roughly two hundred and forty millilitres. In the United Kingdom the cup was historically larger, about two hundred and eighty-four millilitres, but most modern recipes use the metric cup of two hundred and fifty millilitres. When a recipe says a scant cup it means slightly less than full; a heaping tablespoon is mounded above the rim. Dry ingredients should be levelled with a knife, and flour should be spooned into the cup rather than scooped."}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates-text-long", "position": 0, "data": [{"url": null, "page": "SYSTEM_TextFrame"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates-text-long", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.delete", "property": "text", "namespace": "visage-templates-text"}
+{"type": "mycroft.session.delete", "property": "title", "namespace": "visage-templates-text"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 1, "items_number": 1}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates-loading"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates-loading", "data": {"label": "Looking that up"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates-loading", "position": 0, "data": [{"url": null, "page": "SYSTEM_Loading"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates-loading", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.delete", "property": "text", "namespace": "visage-templates-text-long"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 1, "items_number": 1}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates-status-ok"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates-status-ok", "data": {"status": "Enabled"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-status-ok", "data": {"label": "Wi-Fi connected"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates-status-ok", "position": 0, "data": [{"url": null, "page": "SYSTEM_Status"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates-status-ok", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.delete", "property": "label", "namespace": "visage-templates-loading"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 1, "items_number": 1}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates-status-off"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates-status-off", "data": {"status": "Disabled"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-status-off", "data": {"label": "Microphone muted"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates-status-off", "position": 0, "data": [{"url": null, "page": "SYSTEM_Status"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates-status-off", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.delete", "property": "status", "namespace": "visage-templates-status-ok"}
+{"type": "mycroft.session.delete", "property": "label", "namespace": "visage-templates-status-ok"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 1, "items_number": 1}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:utterance", "data": {"utterances": ["stop"], "lang": "en-us"}}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates-image"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates-image", "data": {"image": "/home/ovos/.cache/ovos_gui/ovos-skill-weather.openvoiceos/qt5/images/sun.svg"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-image", "data": {"title": "Clear sky"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-image", "data": {"caption": "Cache path served at /res/"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-image", "data": {"fill": "fit"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-image", "data": {"background_color": "#0d1a28"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates-image", "position": 0, "data": [{"url": null, "page": "SYSTEM_ImageFrame"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates-image", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.delete", "property": "status", "namespace": "visage-templates-status-off"}
+{"type": "mycroft.session.delete", "property": "label", "namespace": "visage-templates-status-off"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 1, "items_number": 1}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "OCP._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "OCPMediaPlayer._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "OCP._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "MycroftCPSLegacyPipeline._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "OCPPipelineMatcher._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "StopService.handle_skill_stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "MycroftCPSLegacyPipeline._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "StopService.handle_skill_stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "OCPPipelineMatcher._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "ovos.utterance.handled", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "OCPMediaPlayer._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates-image-http"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates-image-http", "data": {"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Fronalpstock_big.jpg/500px-Fronalpstock_big.jpg"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-image-http", "data": {"caption": "http image, fill crop"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-image-http", "data": {"fill": "crop"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates-image-http", "position": 0, "data": [{"url": null, "page": "SYSTEM_ImageFrame"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates-image-http", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.delete", "property": "image", "namespace": "visage-templates-image"}
+{"type": "mycroft.session.delete", "property": "title", "namespace": "visage-templates-image"}
+{"type": "mycroft.session.delete", "property": "caption", "namespace": "visage-templates-image"}
+{"type": "mycroft.session.delete", "property": "fill", "namespace": "visage-templates-image"}
+{"type": "mycroft.session.delete", "property": "background_color", "namespace": "visage-templates-image"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 1, "items_number": 1}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "ovos.utterance.handled", "data": {}}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates-animated"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates-animated", "data": {"image": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='30' fill='%231e9bff'><animate attributeName='r' values='20;40;20' dur='1.5s' repeatCount='indefinite'/></circle></svg>"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-animated", "data": {"title": "Animated"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-animated", "data": {"caption": "data: URI"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-animated", "data": {"fill": "fit"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates-animated", "position": 0, "data": [{"url": null, "page": "SYSTEM_AnimatedImageFrame"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates-animated", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.delete", "property": "image", "namespace": "visage-templates-image-http"}
+{"type": "mycroft.session.delete", "property": "caption", "namespace": "visage-templates-image-http"}
+{"type": "mycroft.session.delete", "property": "fill", "namespace": "visage-templates-image-http"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 1, "items_number": 1}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates-html"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates-html", "data": {"html": "<h1>Shopping list</h1><ul><li>Coffee</li><li>Oat milk</li><li>Lemons</li></ul><p id='t'>script ran: no</p><script>document.getElementById('t').textContent='script ran: yes'</script>"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates-html", "position": 0, "data": [{"url": null, "page": "SYSTEM_HtmlFrame"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates-html", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.delete", "property": "image", "namespace": "visage-templates-animated"}
+{"type": "mycroft.session.delete", "property": "title", "namespace": "visage-templates-animated"}
+{"type": "mycroft.session.delete", "property": "caption", "namespace": "visage-templates-animated"}
+{"type": "mycroft.session.delete", "property": "fill", "namespace": "visage-templates-animated"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 1, "items_number": 1}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates-url"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates-url", "data": {"url": "https://example.com/"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates-url", "position": 0, "data": [{"url": null, "page": "SYSTEM_UrlFrame"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates-url", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.delete", "property": "html", "namespace": "visage-templates-html"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 1, "items_number": 1}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates-url-refused"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates-url-refused", "data": {"url": "https://www.google.com/"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates-url-refused", "position": 0, "data": [{"url": null, "page": "SYSTEM_UrlFrame"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates-url-refused", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.delete", "property": "url", "namespace": "visage-templates-url"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 1, "items_number": 1}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "visage-templates-input"}]}
+{"type": "mycroft.session.set", "namespace": "visage-templates-input", "data": {"title": "Name your timer"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-input", "data": {"placeholder": "Say a name"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-input", "data": {"confirm_text": "Confirm"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-input", "data": {"exit_text": "Exit"}}
+{"type": "mycroft.session.set", "namespace": "visage-templates-input", "data": {"skill_id_handler": "visage-templates-input"}}
+{"type": "mycroft.gui.list.insert", "namespace": "visage-templates-input", "position": 0, "data": [{"url": null, "page": "SYSTEM_InputBox"}]}
+{"type": "mycroft.events.triggered", "namespace": "visage-templates-input", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.delete", "property": "url", "namespace": "visage-templates-url-refused"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 1, "items_number": 1}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.display", "data": {"img_code": "aIAAAAAAAAAAAAAAAAAAAAAAAAAEAOOHGAGEGOOHAAAAAAAAAAAAAAAAAAAAAAAAAA", "xOffset": 0, "yOffset": 0, "clearPrev": true}}
+{"type": "mycroft.session.delete", "property": "title", "namespace": "visage-templates-input"}
+{"type": "mycroft.session.delete", "property": "placeholder", "namespace": "visage-templates-input"}
+{"type": "mycroft.session.delete", "property": "confirm_text", "namespace": "visage-templates-input"}
+{"type": "mycroft.session.delete", "property": "exit_text", "namespace": "visage-templates-input"}
+{"type": "mycroft.session.delete", "property": "skill_id_handler", "namespace": "visage-templates-input"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 0, "items_number": 1}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.display", "data": {"img_code": "aIAAAAAAAAAAAAAAAAAAAAAAAAAEAOOHGAGEGOOHAAAAAAAAAAAAAAAAAAAAAAAAAA", "xOffset": 0, "yOffset": 0, "clearPrev": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "23:52"}}

@@ -1,0 +1,118 @@
+/* ovos.common_play now-playing (SPEC 8.6) in the Kickstarter vocabulary (SPEC 9): the cover turns like a record inside
+   the progress ring, over a blurred wash of its own colours (a glow, not a panel). Disc 320 + gap + three text lines fit
+   above the 118 px strip; the wash is absolutely placed and takes no layout space. */
+.now-stage { position: relative; width: 320px; height: 320px; flex: none; }
+.now-wash {
+  position: absolute; inset: -56px; border-radius: 50%; background-size: cover; background-position: center;
+  filter: blur(38px) saturate(1.5); opacity: 0.42; transition: opacity 0.6s ease;
+}
+.now-stage[data-state="paused"] .now-wash { opacity: 0.2; }
+.now-stage[data-state="stopped"] .now-wash { opacity: 0; }
+.now-disc { width: 100%; height: 100%; }
+.now-disc .ring .value { transition: stroke-dashoffset 1s linear; }
+.now-glow { position: absolute; inset: -6px; border-radius: 50%; box-shadow: 0 0 36px 3px var(--accent-soft); opacity: 0; transition: opacity 0.6s ease; }
+.now-stage[data-state="playing"] .now-glow { opacity: 1; animation: now-breathe 6s ease-in-out infinite; }
+@keyframes now-breathe { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+
+.now-cover {
+  position: absolute; inset: 24px; width: calc(100% - 48px); height: calc(100% - 48px);
+  border-radius: 50%; object-fit: cover; transition: opacity 0.3s ease;
+  animation: now-spin 20s linear infinite; animation-play-state: paused;
+}
+.now-stage[data-state="playing"] .now-cover { animation-play-state: running; }
+@keyframes now-spin { to { transform: rotate(360deg); } }
+.now-disc.no-cover .now-cover { object-fit: contain; }
+.now-stage[data-state="paused"] .now-cover { opacity: 0.45; }
+.now-stage[data-state="paused"] .ring .value { stroke: var(--muted); }
+.now-stage[data-state="stopped"] .ring .value { stroke: transparent; }
+
+.now-meta { display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 100%; text-align: center; }
+.now-title { font-size: 30px; font-weight: 400; max-width: 420px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.now-artist { font-size: 20px; color: var(--muted); max-width: 420px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.now-artist:empty { display: none; }
+
+/* Status: equaliser bars beside the state word (frozen on pause, gone when stopped), a pulsing red dot for live. */
+.now-status { margin-top: 6px; display: flex; align-items: center; gap: 8px; font-size: 15px; color: var(--muted); font-variant-numeric: tabular-nums; letter-spacing: 0.5px; }
+.now-eq { display: inline-flex; align-items: flex-end; gap: 2px; height: 14px; }
+.now-eq i { width: 3px; height: 100%; border-radius: 50%; background: var(--accent); transform-origin: bottom; animation: now-eq 0.9s ease-in-out infinite alternate; }
+.now-eq i:nth-child(2) { animation-delay: -0.3s; }
+.now-eq i:nth-child(3) { animation-delay: -0.6s; }
+.now-eq i:nth-child(4) { animation-delay: -0.45s; }
+@keyframes now-eq { from { transform: scaleY(0.25); } to { transform: scaleY(1); } }
+.now-meta[data-state="paused"] .now-eq i { animation-play-state: paused; background: var(--muted); }
+.now-meta[data-state="stopped"] .now-eq { display: none; }
+.now-live-dot { display: none; width: 8px; height: 8px; border-radius: 50%; background: #ff4d4d; box-shadow: 0 0 8px 1px rgba(255, 77, 77, 0.7); }
+.now-status.live .now-live-dot { display: inline-block; animation: now-live 1.6s ease-in-out infinite; }
+.now-meta[data-state="paused"] .now-live-dot { animation-play-state: paused; opacity: 0.5; }
+@keyframes now-live { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+.now-flags:empty { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .now-cover, .now-glow, .now-eq i, .now-live-dot { animation: none !important; }
+}
+
+/* busy: OCP searching. OCP's installing Lottie in a chip under a breathing halo; the fallback turns a dashed arc
+   around thinking dots. */
+.ocp-busy { width: 200px; height: 200px; }
+.ocp-busy > svg:not(.ring) { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.ocp-busy::before {
+  content: ""; position: absolute; inset: -34px; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, rgba(30, 155, 255, 0.34) 0%, rgba(30, 155, 255, 0.1) 45%, transparent 70%);
+  animation: now-breathe 3s ease-in-out infinite;
+}
+.ocp-busy.no-lottie > svg.ring { animation: ocp-turn 1.4s linear infinite; }
+.ocp-busy.no-lottie .ring .track { stroke: transparent; }
+.ocp-busy.no-lottie .ring .value { stroke-dasharray: 72 217 !important; stroke-dashoffset: 0 !important; }
+@keyframes ocp-turn { to { transform: rotate(270deg); } }
+.ocp-dots { display: flex; gap: 14px; }
+.ocp-dots span { width: 16px; height: 16px; border-radius: 50%; background: var(--fg); animation: ocp-dot 1.2s ease-in-out infinite; }
+.ocp-dots span:nth-child(2) { animation-delay: 0.2s; }
+.ocp-dots span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes ocp-dot { 0%, 80%, 100% { opacity: 0.25; transform: scale(0.8); } 40% { opacity: 1; transform: scale(1.15); } }
+.ocp-busy-label { font-size: 22px; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) {
+  .ocp-dots span, .ocp-busy::before, .ocp-busy.no-lottie > svg.ring { animation: none; }
+  .ocp-dots span { opacity: 0.7; }
+}
+
+/* SuggestionsView and Home. Rows: a round thumbnail beside title and source; the playing row's thumbnail is ringed in
+   the accent and glows. Seven 56 px rows plus heading fit above the attention strip. */
+.ocp-heading { font-size: 15px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+.ocp-list { list-style: none; margin: 0; padding: 0; width: 100%; display: flex; flex-direction: column; gap: 12px; }
+.ocp-row { display: flex; align-items: center; gap: 16px; }
+.ocp-thumb {
+  width: 56px; height: 56px; flex: none; border-radius: 50%; object-fit: cover;
+  background: radial-gradient(circle at 35% 30%, #1d2a3a, #0b1118 75%);
+  transition: box-shadow 0.4s ease;
+}
+.ocp-thumb.vinyl { object-fit: contain; padding: 4px; }
+.ocp-row-text { min-width: 0; }
+.ocp-row[data-section] { position: relative; margin-top: 26px; }
+.ocp-row[data-section]::before {
+  content: attr(data-section); position: absolute; top: -24px; left: 0;
+  font-size: 13px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase;
+}
+.ocp-row-title { font-size: 20px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ocp-row-sub { margin-top: 2px; font-size: 14px; color: var(--muted); }
+.ocp-row.current .ocp-row-title { color: var(--accent); }
+.ocp-row.current .ocp-thumb { box-shadow: 0 0 0 3px var(--accent), 0 0 22px 4px var(--accent-soft); }
+.ocp-row.current .ocp-thumb.vinyl { animation: now-spin 8s linear infinite; }
+.ocp-more, .ocp-empty { font-size: 14px; color: var(--muted); }
+.ocp-more:empty, .ocp-empty:empty { display: none; }
+
+/* Home: each OCP skill as a gradient chip in its own hue (ocp_browse_model skillHue) with its icon inside. */
+.ocp-skills { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 22px 40px; }
+.ocp-skill { display: flex; flex-direction: column; align-items: center; width: 150px; text-align: center; }
+.ocp-skill-disc {
+  width: 124px; height: 124px;
+  background: radial-gradient(circle at 35% 30%, hsl(var(--hue) 70% 42%), hsl(var(--hue) 60% 16%) 72%);
+  box-shadow: 0 0 30px 2px hsl(var(--hue) 80% 50% / 0.28);
+}
+.ocp-skill-icon { width: 58%; height: 58%; object-fit: contain; filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45)); }
+.ocp-skill-name { margin-top: 12px; font-size: 19px; max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ocp-skill-types { margin-top: 2px; font-size: 13px; color: var(--muted); }
+
+/* Rows and chips rise in one after another (--i is the item's index). */
+.ocp-enter { animation: ocp-rise 0.26s ease-out both; animation-delay: calc(var(--i, 0) * 60ms); }
+@keyframes ocp-rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .ocp-enter, .ocp-row.current .ocp-thumb.vinyl { animation: none; } }

@@ -1,0 +1,89 @@
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "ovos-skill-homescreen.openvoiceos"}]}
+{"type": "mycroft.gui.list.insert", "namespace": "ovos-skill-homescreen.openvoiceos", "position": 0, "data": [{"url": "/home/ovos/.cache/ovos_gui/ovos-skill-homescreen.openvoiceos/qt5/idle.qml", "page": "idle"}]}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification": {}}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification_model": []}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"system_connectivity": "offline"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"persistent_menu_hint": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"applications_model": [{"name": "OCP", "thumbnail": "/home/ovos/.cache/ovos_gui/ovos.common_play/OCP.png", "action": "ovos.common_play.OCP.homescreen.app"}, {"name": "File Browser", "thumbnail": "/home/ovos/.cache/ovos_gui/ovos-skill-local-media.openvoiceos/ovos-file-browser.svg", "action": "ovos-skill-local-media.openvoiceos.File Browser.homescreen.app"}]}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"apps_enabled": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "22:28"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"date_string": "10/10/2026"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weekday_string": "Saturday"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"day_string": "10"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"month_string": "October"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"year_string": "2026"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"skill_info_enabled": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"skill_info_prefix": false}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"rtl_mode": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"dateFormat": "DMY"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_api_enabled": true}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_code": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_temp": 22.1}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:utterance", "data": {"utterances": ["set a timer for 2 minutes"], "lang": "en-us"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "AlertSkill.handle_create_timer"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 1, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "speak", "data": {"utterance": "Timer for two minutes, starting now.", "expect_response": false, "meta": {"dialog": "confirm_timer_started", "data": {"remaining": "two minutes"}, "skill": "ovos-skill-alerts.openvoiceos"}, "lang": "en-US"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.eyes.blink", "data": {"side": "b"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_start", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.viseme_list", "data": {"start": 1791689319.32195, "visemes": [["4", 0.325], ["3", 0.45], ["0", 0.525], ["4", 0.575], ["0", 0.625], ["2", 0.675], ["4", 0.725], ["5", 0.75], ["6", 0.775], ["2", 0.825], ["4", 0.9], ["3", 1.0], ["2", 1.05], ["4", 1.1], ["4", 1.15], ["0", 1.2], ["3", 1.275], ["0", 1.35], ["3", 1.4], ["3", 1.45], ["4", 1.525], ["3", 1.575], ["3", 1.675], ["0", 1.725], ["2", 1.775], ["3", 1.825], ["0", 1.875], ["3", 1.925], ["4", 1.975], ["3", 2.175], ["1", 2.775], ["4", 3.05]]}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_end", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "AlertSkill.handle_create_timer"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.eyes.blink", "data": {"side": "b"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "ovos.utterance.handled", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:utterance", "data": {"utterances": ["what time is it"], "lang": "en-us"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "TimeSkill.handle_query_time"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "speak", "data": {"utterance": "It is twenty two twenty eight", "expect_response": false, "meta": {"dialog": "time_current", "data": {"time": "twenty two twenty eight"}, "skill": "ovos-skill-date-time.openvoiceos"}, "lang": "en-US"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "TimeSkill.handle_query_time"}}
+{"type": "mycroft.session.list.insert", "namespace": "mycroft.system.active_skills", "position": 0, "data": [{"skill_id": "ovos-skill-date-time.openvoiceos"}]}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "ovos.utterance.handled", "data": {}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-date-time.openvoiceos", "data": {"time_string": "22:28"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-date-time.openvoiceos", "data": {"ampm_string": ""}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-date-time.openvoiceos", "data": {"date_string": "10/10/2026"}}
+{"type": "mycroft.gui.list.insert", "namespace": "ovos-skill-date-time.openvoiceos", "position": 0, "data": [{"url": null, "page": "time"}]}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-date-time.openvoiceos", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_start", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.eyes.blink", "data": {"side": "b"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.viseme_list", "data": {"start": 1791689336.466208, "visemes": [["4", 0.35], ["0", 0.375], ["3", 0.4], ["4", 0.45], ["0", 0.5], ["3", 0.55], ["4", 0.6], ["3", 0.65], ["2", 0.7], ["0", 0.725], ["3", 0.775], ["3", 0.825], ["0", 0.9], ["4", 0.975], ["3", 1.125], ["2", 1.2], ["4", 1.275], ["3", 1.325], ["2", 1.375], ["0", 1.4], ["3", 1.45], ["3", 1.525], ["0", 1.575], ["4", 1.75], ["0", 1.85], ["3", 2.025], ["4", 2.075]]}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_end", "data": {}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "22:29"}}
+{"type": "mycroft.session.delete", "property": "time_string", "namespace": "ovos-skill-date-time.openvoiceos"}
+{"type": "mycroft.session.delete", "property": "ampm_string", "namespace": "ovos-skill-date-time.openvoiceos"}
+{"type": "mycroft.session.delete", "property": "date_string", "namespace": "ovos-skill-date-time.openvoiceos"}
+{"type": "mycroft.session.list.remove", "namespace": "mycroft.system.active_skills", "position": 0, "items_number": 1}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "22:30"}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notifcation_counter": 1}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"notification_model": {"storedmodel": [], "count": 0}}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "speak", "data": {"utterance": "Your set timer is up.", "expect_response": false, "meta": {"dialog": "expired_timer", "data": {"name": "set "}, "skill": "ovos-skill-alerts.openvoiceos"}, "lang": "en-US"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_start", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.viseme_list", "data": {"start": 1791689438.639207, "visemes": [["4", 0.3], ["0", 0.35], ["2", 0.375], ["2", 0.425], ["4", 0.5], ["3", 0.6], ["0", 0.65], ["3", 0.7], ["4", 0.775], ["3", 0.95], ["0", 1.025], ["4", 1.075], ["0", 1.125], ["2", 1.175], ["4", 1.225], ["0", 1.275], ["3", 1.325], ["4", 1.5], ["0", 1.6], ["4", 1.9], ["4", 2.125]]}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_end", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "speak", "data": {"utterance": "Your set timer is up.", "expect_response": false, "meta": {"dialog": "expired_timer", "data": {"name": "set "}, "skill": "ovos-skill-alerts.openvoiceos"}, "lang": "en-US"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.eyes.blink", "data": {"side": "b"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_start", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.viseme_list", "data": {"start": 1791689461.999169, "visemes": [["4", 0.3], ["0", 0.35], ["2", 0.375], ["2", 0.425], ["4", 0.5], ["3", 0.6], ["0", 0.65], ["3", 0.7], ["4", 0.775], ["3", 0.95], ["0", 1.025], ["4", 1.075], ["0", 1.125], ["2", 1.175], ["4", 1.225], ["0", 1.275], ["3", 1.325], ["4", 1.5], ["0", 1.6], ["4", 1.9], ["4", 2.125]]}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"time_string": "22:31"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_end", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "speak", "data": {"utterance": "Your set timer is up.", "expect_response": false, "meta": {"dialog": "expired_timer", "data": {"name": "set "}, "skill": "ovos-skill-alerts.openvoiceos"}, "lang": "en-US"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_start", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.viseme_list", "data": {"start": 1791689485.346106, "visemes": [["4", 0.3], ["0", 0.35], ["2", 0.375], ["2", 0.425], ["4", 0.5], ["3", 0.6], ["0", 0.65], ["3", 0.7], ["4", 0.775], ["3", 0.95], ["0", 1.025], ["4", 1.075], ["0", 1.125], ["2", 1.175], ["4", 1.225], ["0", 1.275], ["3", 1.325], ["4", 1.5], ["0", 1.6], ["4", 1.9], ["4", 2.125]]}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_end", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:utterance", "data": {"utterances": ["stop"], "lang": "en-us"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "AlertSkill._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.start", "data": {"name": "StopService.handle_skill_stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "StopService.handle_skill_stop"}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 1, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "speak", "data": {"utterance": "timer dismissed.", "expect_response": false, "meta": {"dialog": "confirm_dismiss_alert", "data": {"kind": "timer"}, "skill": "ovos-skill-alerts.openvoiceos"}, "lang": "en-US"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.eyes.blink", "data": {"side": "b"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_start", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.viseme_list", "data": {"start": 1791689504.378548, "visemes": [["4", 0.325], ["3", 0.475], ["0", 0.55], ["4", 0.6], ["0", 0.65], ["2", 0.7], ["4", 0.75], ["3", 0.8], ["0", 0.925], ["3", 1.025], ["4", 1.175], ["0", 1.275], ["3", 1.375], ["3", 1.55], ["4", 1.65]]}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_end", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "ovos.timer.widget.manager.update", "data": {"count": 0, "action": "ovos.gui.show.pending.timers"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "speak", "data": {"utterance": "timer dismissed.", "expect_response": false, "meta": {"dialog": "confirm_dismiss_alert", "data": {"kind": "timer"}, "skill": "ovos-skill-alerts.openvoiceos"}, "lang": "en-US"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.eyes.blink", "data": {"side": "b"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_start", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "enclosure.mouth.viseme_list", "data": {"start": 1791689507.081856, "visemes": [["4", 0.325], ["3", 0.475], ["0", 0.55], ["4", 0.6], ["0", 0.65], ["2", 0.7], ["4", 0.75], ["3", 0.8], ["0", 0.925], ["3", 1.025], ["4", 1.175], ["0", 1.275], ["3", 1.375], ["3", 1.55], ["4", 1.65]]}}
+{"type": "mycroft.events.triggered", "namespace": "ovos-skill-homescreen.openvoiceos", "event_name": "page_gained_focus", "data": {"number": 0}}
+{"type": "mycroft.session.set", "namespace": "ovos-skill-homescreen.openvoiceos", "data": {"weather_temp": 21.7}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "recognizer_loop:audio_output_end", "data": {}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "mycroft.skill.handler.complete", "data": {"name": "AlertSkill._handle_session_stop", "intent_name": "stop"}}
+{"type": "mycroft.events.triggered", "namespace": "system", "event_name": "ovos.utterance.handled", "data": {}}
