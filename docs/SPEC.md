@@ -566,10 +566,6 @@ wide oval and a filled open mouth hides the viseme motion:
   open visemes are hollow and drawn at full size with enough opening to keep a visible
   gap inside the stroke. Viseme 0 is about 170 × 80 px.
 
-`static/face/compare.html` shows the face next to a reference frame passed to
-`window.setReference(url)` (the reference image is not in the repo); `?codes=0,2` shows
-the rest face followed by those viseme codes.
-
 **Geometry.** Designed at 480 × 800 CSS px portrait, scaled to fit the window with a CSS
 transform, aspect kept, inside a Mark II-like silhouette (an SVG rounded capsule; no
 licensed artwork).
