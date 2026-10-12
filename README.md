@@ -24,7 +24,7 @@ skills, homescreen                                   ▲ ovos.widgets.* translat
 
 - A running OVOS install (core bus on `ws://127.0.0.1:8181/core`) with the weather,
   date-time, alerts and OCP skills you want to see.
-- Python 3.10+ for ovos-visage itself.
+- Python 3.11+ for ovos-visage itself.
 - A **separate virtualenv** for `ovos-gui` and `ovos-skill-homescreen`. The homescreen
   pins `ovos-workshop<9`; installing it next to OVOS can downgrade `ovos-workshop` there
   and break OVOS (`docs/SPEC.md` 3.1).

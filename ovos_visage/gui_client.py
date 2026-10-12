@@ -73,7 +73,7 @@ class GuiClient:
             try:
                 port = await self._negotiate_port()
                 await self._hold_gui_socket(port)
-            except (aiohttp.ClientError, OSError, asyncio.TimeoutError) as err:
+            except (TimeoutError, aiohttp.ClientError, OSError) as err:
                 LOG.info("GUI socket unavailable: %r", err)
             if self._ws is not None:
                 self._ws = None

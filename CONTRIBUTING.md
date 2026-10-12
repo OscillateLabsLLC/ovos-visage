@@ -6,7 +6,7 @@ Contributions are welcome: page components, protocol fixes, visual work, and tes
 
 ### Prerequisites
 
-- Python 3.10+
+- Python 3.11+
 - [uv](https://github.com/astral-sh/uv)
 - [just](https://github.com/casey/just) (optional; every recipe has a `uv` equivalent below)
 
