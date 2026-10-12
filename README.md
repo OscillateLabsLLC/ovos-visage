@@ -106,8 +106,6 @@ The geometry is `VISAGE_FACE` in `static/face/face.js`. Eyes, strokes and the re
 are measured from Mycroft's animated face image. The face is deliberately rounder than
 that reference, with the eyes 260 px apart and the mouth lower, and the open mouth
 shapes are hollow outlines rather than filled (`docs/screenshots/face/`).
-`/static/face/compare.html` on a running instance shows the face next to a reference
-frame passed to `window.setReference(url)`; `?codes=0,2` shows any list of viseme codes.
 
 The mouth has seven outlines, one per Mycroft viseme code, all with the same point count,
 and eases between them. The codes come from `ovos_utils/lang/visimes.py`; the shapes
