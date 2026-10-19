@@ -40,18 +40,32 @@ function isBlank(value) {
   return value === null || value === undefined || value === "";
 }
 
+const COMMA_DECIMAL = /^\s*-?\d+,\d+\s*$/;
+
+// The skill formats numbers in the device locale, so a Dutch install sends "21,5"; a comma between digits is a
+// decimal point here (nothing the skill sends has a thousands separator). null when the value is not a number.
+export function toNumber(value) {
+  if (isBlank(value)) return null;
+  const text = String(value);
+  const n = Number(COMMA_DECIMAL.test(text) ? text.replace(",", ".") : text);
+  return Number.isNaN(n) ? null : n;
+}
+
 export function degrees(value) {
-  return isBlank(value) || Number.isNaN(Number(value)) ? MISSING : `${Math.round(Number(value))}°`;
+  const n = toNumber(value);
+  return n === null ? MISSING : `${Math.round(n)}°`;
 }
 
 export function percent(value) {
-  return isBlank(value) || Number.isNaN(Number(value)) ? MISSING : `${Math.round(Number(value))}%`;
+  const n = toNumber(value);
+  return n === null ? MISSING : `${Math.round(n)}%`;
 }
 
 function details(data, withHumidity) {
   const parts = [];
   if (withHumidity && !isBlank(data.humidity)) parts.push(`humidity ${percent(data.humidity)}`);
-  if (!isBlank(data.windSpeed)) parts.push(`wind ${Math.round(Number(data.windSpeed))}`);
+  const wind = toNumber(data.windSpeed);
+  if (wind !== null) parts.push(`wind ${Math.round(wind)}`);
   return parts.join(" · ");
 }
 
