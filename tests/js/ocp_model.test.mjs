@@ -67,6 +67,15 @@ test("no declared duration: mpv's steady length becomes the total once it has he
   assert.equal(trackModel({ ...stream, position: 4, length: 636000 }, first).live, true, "a growing buffer");
 });
 
+test("a declared live stream (duration -1, as SomaFM sends) stays live even when mpv's length holds", () => {
+  const radio = { uri: "https://ice.somafm.com/dronezone", title: "Drone Zone 2", duration: -1, status: "Playing" };
+  const first = trackModel({ ...radio, position: 2, length: 28630 });
+  const second = trackModel({ ...radio, position: 4, length: 28630 }, first);
+  assert.equal(second.live, true);
+  assert.equal(second.durationMs, 0);
+  assert.equal(progressAt(second).fraction, 1);
+});
+
 test("a claimed duration with a buffer length that grows in step with position still reads as live", () => {
   const claimed = { ...SONG, duration: 600000 };
   const first = trackModel({ ...claimed, position: 14, length: 43284 });
