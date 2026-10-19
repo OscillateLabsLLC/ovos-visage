@@ -1,9 +1,11 @@
 // View model for the OCP now-playing page (SPEC 8.6), from ovos.common_play session data as ovos_plugin_common_play
 // ocp/gui.py sends it. Pure; tested under node.
 //
-// Units, measured (SPEC 8.6): `duration` is the track's own length in ms (0 for a live stream). `position`
-// is mpv `time-pos` in seconds, about every 2 s, except after an OCP seek, which writes ms. `length` is mpv duration in
-// ms, which on a live stream is the growing buffer, so it is never used as the total. `image` can be a raw filesystem
+// Units, measured (SPEC 8.6): `duration` is the track's own length in ms, -1 for a stream OCP knows is live (SomaFM),
+// and 0 for any stream whose media entry carried no length (the yt-dlp path reports `duration` in seconds and
+// ovos-utils' MediaEntry drops that key). `position` is mpv `time-pos` in seconds, about every 2 s, except after an OCP seek, which writes ms. `length` is
+// mpv's duration in ms, reported with `position`: on a live stream it is the growing buffer, on a finite stream it holds
+// steady, so with no declared duration it becomes the total once it has held. `image` can be a raw filesystem
 // path outside the ovos-gui cache; the middle layer serves those it saw in session data as /res-abs/<token> (resources.py),
 // so data:, http(s), /res/ and /res-abs/ URLs count as cover art and any raw path left over gets the glyph.
 
@@ -46,13 +48,28 @@ function lengthTracksPosition(previous, lengthMs, position) {
   return Math.abs(lengthMs - previous.lengthMs - (position - previous.positionMs)) < TRACKING_SLACK_MS;
 }
 
+/**
+ * With no declared duration, mpv's `length` is the total once it has held while position advanced, and it stays the
+ * total through a pause (the previous model already took it).
+ */
+function lengthHolds(previous, lengthMs, position) {
+  if (!previous || !(lengthMs > 0) || lengthMs !== previous.lengthMs) return false;
+  return position > previous.positionMs || previous.durationMs === lengthMs;
+}
+
 /** Everything the page shows except the clock-driven position, which progressAt() adds. `previous` is the last model. */
 export function trackModel(data = {}, previous = null) {
-  const duration = Math.max(0, Number(data.duration) || 0);
+  const reported = Number(data.duration) || 0;
+  const declaredLive = reported < 0;
+  const declared = Math.max(0, reported);
   const lengthMs = Math.max(0, Number(data.length) || 0);
-  const position = positionMs(data.position, duration);
-  const id = [data.uri, data.title, duration].join("|");
-  const live = duration === 0 || lengthTracksPosition(previous?.id === id ? previous : null, lengthMs, position);
+  const position = positionMs(data.position, declared);
+  const id = [data.uri, data.title, declared].join("|");
+  const last = previous?.id === id ? previous : null;
+  const live =
+    declaredLive ||
+    (declared === 0 ? !lengthHolds(last, lengthMs, position) : lengthTracksPosition(last, lengthMs, position));
+  const duration = declared > 0 ? declared : lengthMs;
   return {
     id,
     title: String(data.title || "Unknown track"),

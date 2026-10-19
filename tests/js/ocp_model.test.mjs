@@ -52,6 +52,30 @@ test("measured live stream: duration 0, length grows with position; the ring sta
   assert.equal(progressAt(models[3], 1500).elapsed, "0:21");
 });
 
+test("no declared duration: mpv's steady length becomes the total once it has held, through a pause", () => {
+  // The yt-dlp path: the media entry carries no length, so OCP sends duration 0, while mpv reports the real total.
+  const stream = { uri: "https://www.youtube.com/watch?v=x", title: "Big Buck Bunny", duration: 0, status: "Playing" };
+  const first = trackModel({ ...stream, position: 2, length: 634000 });
+  assert.equal(first.live, true, "one report cannot tell a finite stream from a live buffer");
+  const second = trackModel({ ...stream, position: 4, length: 634000 }, first);
+  assert.equal(second.live, false);
+  assert.equal(second.durationMs, 634000);
+  assert.equal(progressAt(second).total, "10:34");
+  const paused = trackModel({ ...stream, status: "Paused", position: 4, length: 634000 }, second);
+  assert.equal(paused.live, false, "a pause keeps the total");
+  assert.equal(trackModel({ ...stream, position: 6.1, length: 634000 }, paused).durationMs, 634000);
+  assert.equal(trackModel({ ...stream, position: 4, length: 636000 }, first).live, true, "a growing buffer");
+});
+
+test("a declared live stream (duration -1, as SomaFM sends) stays live even when mpv's length holds", () => {
+  const radio = { uri: "https://ice.somafm.com/dronezone", title: "Drone Zone 2", duration: -1, status: "Playing" };
+  const first = trackModel({ ...radio, position: 2, length: 28630 });
+  const second = trackModel({ ...radio, position: 4, length: 28630 }, first);
+  assert.equal(second.live, true);
+  assert.equal(second.durationMs, 0);
+  assert.equal(progressAt(second).fraction, 1);
+});
+
 test("a claimed duration with a buffer length that grows in step with position still reads as live", () => {
   const claimed = { ...SONG, duration: 600000 };
   const first = trackModel({ ...claimed, position: 14, length: 43284 });
